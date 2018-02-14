@@ -1,46 +1,74 @@
-#container50{
+/*page one*/
+#containerHead{
     width:100%;
     height:50px;
-    background-color:powderblue;
+    border-style:solid;
+    border-color:powderblue;
 }
-#container70{
+#containerNav{
     width:100%;
     height:70px;
-    background-color:powderblue;
+    border-style:solid;
+    border-color:powderblue;
+}
+#containerSlide{
+    width:100%;
+    height:450px;
+    border-style:solid;
+    border-color:powderblue;
+}
+#containerArt{
+    width:100%;
+    height:255px;
+    border-style:solid;
+    border-color:powderblue;
 }
 #containerArtL{
-    width:33.3%;
-    height:150px;
+    width:33%;
+    height:250px;
     position: inline-block;
     float: left;
-    background-color:red;
+    border-style:solid;    
+    border-color:red;
 }
 #containerArtC{
-    width:33.3%;
-    height:150px;
+    width:33%;
+    height:250px;
     position: inline-block;
     float: left;
-    background-color:purple;
+    border-style:solid;
+    border-color:purple;
 }
 #containerArtR{
-    width:33.3%;
-    height:150px;
+    width:33%;
+    height:250px;
     position: inline-block;
     float: left;
-    background-color:green;
+    border-style:solid;
+    border-color:green;
 }
 #container150{
     width:100%;
     height:150px;
-    background-color:powderblue;
+    border-style:solid;
+    border-color:powderblue;
 }
-#container650{
-    width:100%;
-    height:650px;
-    background-color:powderblue;
-}
+
 #containerA{
     width:100%;
     height:800px;
-    background-color:powderblue;
+    border-style:solid;
+    border-color:powderblue;
+}
+#containerMail{
+    width:100%;
+    height:70px;
+    border-style:solid;
+    border-color:powderblue;
+}
+#containerFoot{
+    width:100%;
+    height:150px;
+    border-style:solid;
+    border-color:powderblue;
 }
