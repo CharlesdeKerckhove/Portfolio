@@ -1,0 +1,30 @@
+#container{
+    width:100%;
+    height:auto;
+    background-color:beige;
+}
+#addTaskInput{
+    height:auto;
+    width: 99%;
+    float: center;
+    text-align: center;
+    color: #000000;
+    font-size: 1em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+}
+#addTask{
+    height:auto;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 1em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+}
+#taskList{
+    height:auto;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    font-size: 1em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+}
