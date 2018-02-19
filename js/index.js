@@ -1,28 +1,66 @@
-Backendless.initApp("AC29438F-295C-417A-FF51-2F117FAA4300", "2081B5D2-2E7C-6F96-FFD9-590A4D57A800");
+//video
+var video = document.getElementById("myvideo");
 
-$(document).on("pageshow","#todoPage", onPageShow);
+//buttons
+var playbttn = document.getElementById("playbttn");
+var volCtrl = document.getElementById("volbtn");
 
-function onPageShow() {
-console.log("page shown");
-}
+//sliders
+var seekbar = document.getElementById("seekbar");
+var volBar = document.getElementById("volumeBar");
 
-Backendless.Data.of("Tasks").find().then(processResults).catch(error);
+//Play Button
+    function playVideo(){
+        if (video.paused){
+            video.play();
+            playbttn.innerHTML = "Pause";
+        } else{
+            video.pause();
+            playbttn.innerHTML = "Resume";
+        }
+    }
+    playbttn.addEventListener("click", playVideo);
+   
+//Mute Button
+    function muteVolume(){
+        if(video.muted) {
+            video.muted = false;
+            volCtrl.innerHTML = "Mute";
+        } else {
+            video.muted = true;
+            volCtrl.innerHTML = "Unmute";
+        }
+    }
+    volCtrl.addEventListener("click", muteVolume);
+    
+//Duration Bar    
+    function seekVid(){
+        var slideto = video.duration * (seekbar.value / 100);
+        video.currentTime = slideto;
+    }
+    
+    function updateSeekbar(){
+        var newtime = video.currentTime * (100 / video.duration);
+        seekbar.value = newtime;
+    }
 
-function processResults(tasks) {
- //display the first task in an array of tasks.
-    alert(tasks[1].Task)
- //wipe the list clean
-$('#taskList').empty();
-    console.log("list wiped");
- //add each tasks
-for (var i = 0; i < tasks.length; i++) {
-    $('#taskList').append("<li>" + tasks[i].Task+"</li>");
-    console.log("repeat add");
-}
-}
+    function vidPause(){
+        video.pause();
+    }
 
-function error(err) {
- alert(err);
-}
+    function vidPlay(){
+        video.play();
+    }
+    
+    seekbar.addEventListener("change", seekVid);
+    video.addEventListener("timeupdate", updateSeekbar);
+    seekbar.addEventListener("mousedown", vidPause);
+    seekbar.addEventListener("mouseup", vidPlay);
 
+//Volume Bar
+    function changeVolume(){
+        video.volume = volBar.value;
+        console.log("hi");
+    }
 
+    volBar.addEventListener("change", changeVolume);

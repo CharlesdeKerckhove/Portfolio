@@ -22,27 +22,28 @@
     height:255px;
     border-style:solid;
     border-color:powderblue;
+    display: table;
 }
 #containerArtL{
-    width:33%;
-    height:250px;
-    position: inline-block;
+    width: 32.6%;
+    height: auto;
+    display: block;
     float: left;
-    border-style:solid;    
-    border-color:red;
+    border-style: solid;    
+    border-color: red;
 }
 #containerArtC{
-    width:33%;
-    height:250px;
-    position: inline-block;
+    width: 32.6%;
+    height: auto;
+    display: block;
     float: left;
-    border-style:solid;
-    border-color:purple;
+    border-style: solid;
+    border-color: purple;
 }
 #containerArtR{
-    width:33%;
-    height:250px;
-    position: inline-block;
+    width:32.6%;
+    height: auto;
+    display: block;
     float: left;
     border-style:solid;
     border-color:green;

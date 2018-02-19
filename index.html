@@ -4,9 +4,8 @@
     <title>Primucus</title>
 <!--link to external files-->
     <link href="StyleSheet.css" rel="stylesheet" type="text/css">
-    <script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
-    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript" defer></script>
+
 <!--responsive layout-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
@@ -32,21 +31,34 @@
     <br>
     <div data-role = "articles">
         <div id = "containerArt">
-            <div id = "containerArtL">
+            <article id = "containerArtL">
 t
-            </div>
-            <div id = "containerArtC">
+            </article>
+            <article id = "containerArtC">
 t
-            </div>
-            <div id = "containerArtR">
+            </article>
+            <article id = "containerArtR">
 t        
-            </div>
+            </article>
         </div>
     </div>  
     <br>
     <div data-role = "video">
         <div id = "containerA">
         Advert
+            <video id="myvideo">
+                <source src="media/bbb1.mp4" />
+                Video Player not Available
+            </video>
+                <section>
+                    <button id="playbttn">Play</button>
+                </section>
+                <section>
+                    <button id="volbtn">Mute</button>
+                </section>
+                <input type = "range" min = "0" max = "100" value = "0" step = "1" id = "seekbar">
+                <input type = "range" min = "0" max = "1" value = "1" step = "0.1" id = "volumeBar">
+            
         </div>
     </div>
     <br>
