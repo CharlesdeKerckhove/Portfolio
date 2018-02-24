@@ -4,10 +4,15 @@ var video = document.getElementById("myvideo");
 //buttons
 var playbttn = document.getElementById("playbttn");
 var volCtrl = document.getElementById("volbtn");
+var fullScreenButton = document.getElementById("fullscreen");
 
 //sliders
 var seekbar = document.getElementById("seekbar");
 var volBar = document.getElementById("volumeBar");
+
+//time
+var curtime = document.getElementById("curtimetext");
+var durtime = document.getElementById("durtimetext");
 
 //Play Button
     function playVideo(){
@@ -40,8 +45,21 @@ var volBar = document.getElementById("volumeBar");
     }
     
     function updateSeekbar(){
+    //duration bar
         var newtime = video.currentTime * (100 / video.duration);
         seekbar.value = newtime;
+    //duration numbers    
+        var curmins = Math.floor(video.currentTime / 60);
+        var cursecs = Math.floor(video.currentTime - curmins * 60);
+        var durmins = Math.floor(video.duration / 60);
+        var dursecs = Math.floor(video.duration - durmins * 60);
+        
+        if(cursecs < 10){ cursecs = "0" + cursecs;}
+        if(dursecs < 10){ dursecs = "0" + dursecs;}
+        if(curmins < 10){ curmins = "0" + curmins;}
+        if(durmins < 10){ durmins = "0" + durmins;}
+        curtimetext.innerHTML = curmins + ":" + cursecs;
+        durtimetext.innerHTML = durmins + ":" + dursecs;
     }
 
     function vidPause(){
@@ -60,7 +78,18 @@ var volBar = document.getElementById("volumeBar");
 //Volume Bar
     function changeVolume(){
         video.volume = volBar.value;
-        console.log("hi");
     }
 
     volBar.addEventListener("change", changeVolume);
+
+//Fullscreen
+    function fullScreen(){
+        if(video.requestFullscreen){
+            video.requestFullScreen();
+        } else if (video.mozRequestFullScreen){
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen){
+            video.webkitRequestFullscreen();
+            }
+    }
+    fullScreenButton.addEventListener("click", fullScreen);
