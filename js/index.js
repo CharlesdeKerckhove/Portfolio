@@ -18,10 +18,10 @@ var durtime = document.getElementById("durtimetext");
     function playVideo(){
         if (video.paused){
             video.play();
-            playbttn.innerHTML = "Pause";
+            playbttn.innerHTML = '<i class="material-icons">pause</i>';
         } else{
             video.pause();
-            playbttn.innerHTML = "Resume";
+            playbttn.innerHTML = '<i class="material-icons">play_arrow</i>';
         }
     }
     playbttn.addEventListener("click", playVideo);
@@ -30,10 +30,10 @@ var durtime = document.getElementById("durtimetext");
     function muteVolume(){
         if(video.muted) {
             video.muted = false;
-            volCtrl.innerHTML = "Mute";
+            volCtrl.innerHTML = '<i class="material-icons">volume_up</i>';
         } else {
             video.muted = true;
-            volCtrl.innerHTML = "Unmute";
+            volCtrl.innerHTML = '<i class="material-icons">volume_off</i>';
         }
     }
     volCtrl.addEventListener("click", muteVolume);
