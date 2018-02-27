@@ -14,6 +14,7 @@ var volBar = document.getElementById("volumeBar");
 var curtime = document.getElementById("curtimetext");
 var durtime = document.getElementById("durtimetext");
 
+
 //Play Button
     function playVideo(){
         if (video.paused){
