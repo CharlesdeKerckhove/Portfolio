@@ -1,8 +1,7 @@
 /*General*/
-    /*green = #19BD75*/19BD75
+    /*green = #19BD75   rgba(25,189,117,0.3)  */
 body{
-    background: #fff;
-    font-family: calibri;
+    background-color: ;
 }
 /*css code imported from: http://danielstern.ca/range.css/#/  */
 /*input[type=range]*/
@@ -97,13 +96,22 @@ input[type=range] {
 #containerHead{
     width:100%;
     height:40px;
-    background: #eee;
+    background-color: #19BD75;
 }
     /*header*/
-    #logo{
-        height: auto;
-        width: 30%;
-    }
+#title{
+        float: left;
+        width:5%;
+        padding-left: 1%;
+        color: #fff;
+        line-height: 38.5px;
+        font-size: 2em;
+        font-family: 'Calibri', sans-serif;
+}
+#title:hover{
+        color: black;
+        cursor: pointer;
+}
     div.fa-shopping-cart{
         float: right;
         margin:0px 10px;
@@ -116,7 +124,7 @@ input[type=range] {
         font-size: 1.4em;
     }
     div.fa-shopping-cart:hover{
-        color: #19BD75;
+        color: black;
         cursor: pointer;
     }
     div.fa-cog{
@@ -131,70 +139,48 @@ input[type=range] {
         font-size: 1.4em;
     }
     div.fa-cog:hover{
-        color: #19BD75;
+        color: black;
         cursor: pointer;
     }
-    #LogIn{
-        float:left;
-        margin:0px 0px;
-        width: 10%;
-        height: auto;
-        overflow: none;
-        background-color: #DFDFDF;
-        color: #fff;
-        line-height: 38.5px;
-        text-align: center;
-        font-size: 1.4em;
-        border-color: #19BD75;
-        border-style: none;
-    }
-    #LogIn:hover{
-        color: #19BD75;
-        cursor: pointer;
-    }
-    #SignUp{
-        float: left;
-        margin:0px 0px;
-        width: 10%;
-        height: auto;
-        background-color: #19BD75;
-        color: #fff;
-        line-height: 38.5px;
-        text-align: center;
-        font-size: 1.4em;
-        border-style: none;
-    }
-    #SignUp:hover{
-        cursor: pointer;
-    }
-#containerNav{
-    width:100%;
-    height:70px;
-    border-style:solid;
-    border-color:powderblue;
+    
+/*nav*/
+
+nav{
+    height:100px;
+    line-height: 100px;
 }
-    /*nav*/
-    #containerNav ul{
+    #logo{
+        float: left;
+        width: auto;
+        height:100px;
+        padding-left: 1%;
+    }
+    nav ul{
         list-style: none;
-        background-color: #eee;
-        text-align: center;
+        width: 100%;
+        text-align: right;
         padding: 0;
         margin: 0;
     }
-    #containerNav li{
+    nav li{
         font-family: 'Calibri', sans-serif;
-        font-size: 1.2em;
+        font-size: 1.3em;
         line-height: 40px;
         height: 40px;
         width: 10%;
+        padding-top:60px;
+        padding-right:0.5%;
+        text-align: center;
         display: inline-block;
-        border-bottom: 1px solid #888;
+        border-bottom: 1px solid #19BD75;
     }
-    #containerNav a{
+    nav a{
       text-decoration: none;
-      color: #fff;
-      display: block;
-      transition: .3s background-color;
+      color: #19BD75;
+    }
+    nav a:hover{
+      color: black;
+      cursor: pointer;
     }
 #containerSlide{
     width:100%;

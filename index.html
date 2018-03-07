@@ -11,80 +11,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-<div data-role = "page" id = "pageOne">
-    <div data-role = "header">
-        <div id = "containerHead">
-            <div class="fas fa-cog"></div>
-            <div class="fas fa-shopping-cart"></div>
-            <button id = SignUp>Sign Up</button>
-            <button id = LogIn>Log In</button>
-        </div>
+    <div id = "containerHead">
+        <div class="fas fa-cog"></div>
+        <div class="fas fa-shopping-cart"></div>
+        <span id = "title"><b>Primucus</b></span>
     </div>
     <br>
-    <div data-role = "nav">
-        <img id = "logo" src = "images/logo">
-        <div id = "containerNav">
-            <ul>
-                <li id = "home"><a class = "active" href = "#">Home</a></li>
-                <li id = "newRange"><a href = "#">New Range</a></li>
-                <li id = "mens"><a href = "#">Mens</a></li>
-                <li id = "womens"><a href = "#">Womens</a></li>
-                <li id = "kids"><a href = "#">Kids</a></li>           
-            </ul>
-        </div>
-    </div> 
+    <nav id = "containerNav">
+        <img id = "logo" src = "images/LOGO.png" alt = "logo">
+        <ul>
+            <li id = "home"><a class = "active" href = "#">Home</a></li>
+            <li id = "newRange"><a href = "#">New Range</a></li>
+            <li id = "mens"><a href = "#">Mens</a></li>
+            <li id = "womens"><a href = "#">Womens</a></li>
+            <li id = "kids"><a href = "#">Childrens</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <div id = "containerSlide">
+    Product Slide Show
+    </div>
     <br>
-    <div data-role = "popularProducts">
-        <div id = "containerSlide">
-        Product Slide Show
-        </div>
-    </div> 
-    <br>
-    <div data-role = "articles">
-        <div id = "containerArt">
-            <article id = "containerArtL">
+    <div id = "containerArt">
+        <article id = "containerArtL">
 test
-            </article>
-            <article id = "containerArtC">
+        </article>
+        <article id = "containerArtC">
 test
-            </article>
-            <article id = "containerArtR">
+        </article>
+        <article id = "containerArtR">
 test        
-            </article>
-        </div>
-    </div>  
-    <br>
-    <div data-role = "video">
-        <div id = "containerA">
-            <video id="myvideo">
-                <source src="media/bbb1.mp4" />
-                Video Player not Available
-            </video>
-                <div id = containerBttn>
-                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                    <button id="playbttn"><i class="material-icons">play_arrow</i></button>
-                    <input type = "range" min = "0" max = "100" value = "0" step = "1" id = "seekbar" class = "range">
-                    <span id = "curtimetext">00:00</span> / <span id = "durtimetext">00:00</span>
-                    <button id="volbtn"><i class="material-icons">volume_off</i></button>
-                    <input type = "range" min = "0" max = "1" value = "1" step = "0.1" id = "volumeBar" class = "range">
-                    <button id = "fullscreen"><i class="material-icons">fullscreen</i></button>
-                </div>
-        </div>
+        </article>
     </div>
     <br>
-    <div data-role = "signUp">
-        <div id = "containerMail">
-        Sign Up Mail List
-        </div>
-    </div> 
+    <div id = "containerA">
+        <video id="myvideo">
+            <source src="media/bbb1.mp4" />
+            Video Player not Available
+        </video>
+            <div id = containerBttn>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <button id="playbttn"><i class="material-icons">play_arrow</i></button>
+                <input type = "range" min = "0" max = "100" value = "0" step = "1" id = "seekbar" class = "range">
+                <span id = "curtimetext">00:00</span> / <span id = "durtimetext">00:00</span>
+                <button id="volbtn"><i class="material-icons">volume_off</i></button>
+                <input type = "range" min = "0" max = "1" value = "1" step = "0.1" id = "volumeBar" class = "range">
+                <button id = "fullscreen"><i class="material-icons">fullscreen</i></button>
+            </div>
+    </div>
     <br>
-    <div data-role = "footer">
-        <div id = "containerFoot">
-        Quick Access Site Map
-        </div>
-    </div>    
-</div>
-    
-    
+    <div id = "containerMail">
+    Sign Up Mail List
+    </div>
+    <br>
+    <div id = "containerFoot">
+    Quick Access Site Map
+    </div>
 </body>
 </html>
