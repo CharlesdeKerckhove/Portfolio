@@ -144,43 +144,43 @@ input[type=range] {
     }
     
 /*nav*/
-
-nav{
-    height:100px;
-    line-height: 100px;
+#nav{
+    height: 40px;
+    line-height: 40px;
 }
-    #logo{
-        float: left;
-        width: auto;
-        height:100px;
-        padding-left: 1%;
-    }
-    nav ul{
-        list-style: none;
-        width: 100%;
-        text-align: right;
-        padding: 0;
-        margin: 0;
-    }
-    nav li{
-        font-family: 'Calibri', sans-serif;
-        font-size: 1.3em;
-        line-height: 40px;
-        height: 40px;
-        width: 10%;
-        padding-top:60px;
-        padding-right:0.5%;
-        text-align: center;
-        display: inline-block;
-        border-bottom: 1px solid #19BD75;
-    }
-    nav a{
-      text-decoration: none;
-      color: #19BD75;
-    }
-    nav a:hover{
-      color: black;
-      cursor: pointer;
+#nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    padding-left: 15%;
+    margin: 0;
+}
+#nav li{
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.3em;
+    line-height: 40px;
+    height: 40px;
+    width: 10%;
+    overflow: hidden;
+    padding-right: 1%;
+    text-align: center;
+    display: inline-block;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+}
+#nav a:hover{
+    color: black;
+    cursor: pointer;
+}
+ #logo{
+    display: block;
+    margin: auto;
+    width: auto;
+    height:auto;
+    padding-left: 1%;
     }
 #containerSlide{
     width:100%;
