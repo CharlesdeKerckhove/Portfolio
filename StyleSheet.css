@@ -1,7 +1,8 @@
 /*General*/
-    /*green = #008D36*/
+    /*green = #19BD75*/19BD75
 body{
     background: #fff;
+    font-family: calibri;
 }
 /*css code imported from: http://danielstern.ca/range.css/#/  */
 /*input[type=range]*/
@@ -91,63 +92,110 @@ input[type=range] {
     input[type=range]:focus::-ms-fill-upper {
       background: #c3e8ec;
     }
-/*social media buttons*/
-
-div.fa-facebook-f{
-    margin:0px 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1.4em;
-}
-div.fa-twitter{
-    margin:0px 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1.4em;
-}
-div.fa-google-plus-g{
-    margin:0px 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1.4em;
-}
-div.fa-envelope{
-    margin:0px 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1.4em;
-}
 
 /*page one*/
 #containerHead{
     width:100%;
     height:40px;
-    border-style:solid;
     background: #eee;
-    border-color:powderblue;
 }
+    /*header*/
+    #logo{
+        height: auto;
+        width: 30%;
+    }
+    div.fa-shopping-cart{
+        float: right;
+        margin:0px 10px;
+        width: 3%;
+        height: auto;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 1.4em;
+    }
+    div.fa-shopping-cart:hover{
+        color: #19BD75;
+        cursor: pointer;
+    }
+    div.fa-cog{
+        float: right;
+        margin:0px 10px;
+        width: 3%;
+        height: auto;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 1.4em;
+    }
+    div.fa-cog:hover{
+        color: #19BD75;
+        cursor: pointer;
+    }
+    #LogIn{
+        float:left;
+        margin:0px 0px;
+        width: 10%;
+        height: auto;
+        overflow: none;
+        background-color: #DFDFDF;
+        color: #fff;
+        line-height: 38.5px;
+        text-align: center;
+        font-size: 1.4em;
+        border-color: #19BD75;
+        border-style: none;
+    }
+    #LogIn:hover{
+        color: #19BD75;
+        cursor: pointer;
+    }
+    #SignUp{
+        float: left;
+        margin:0px 0px;
+        width: 10%;
+        height: auto;
+        background-color: #19BD75;
+        color: #fff;
+        line-height: 38.5px;
+        text-align: center;
+        font-size: 1.4em;
+        border-style: none;
+    }
+    #SignUp:hover{
+        cursor: pointer;
+    }
 #containerNav{
     width:100%;
     height:70px;
     border-style:solid;
     border-color:powderblue;
 }
+    /*nav*/
+    #containerNav ul{
+        list-style: none;
+        background-color: #eee;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    #containerNav li{
+        font-family: 'Calibri', sans-serif;
+        font-size: 1.2em;
+        line-height: 40px;
+        height: 40px;
+        width: 10%;
+        display: inline-block;
+        border-bottom: 1px solid #888;
+    }
+    #containerNav a{
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      transition: .3s background-color;
+    }
 #containerSlide{
     width:100%;
     height:450px;
@@ -193,6 +241,8 @@ div.fa-envelope{
 #myvideo{
     display: block;
     margin: auto;
+    width: 70%;
+    height:auto;
 }
 #containerBttn{
     width: 100%;
