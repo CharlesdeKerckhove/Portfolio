@@ -181,10 +181,15 @@ nav a:hover{
     padding-left: 1%;
     }
 #containerSlide{
-    width:100%;
-    height:450px;
-    border-style:solid;
-    border-color:powderblue;
+    max-width: 100%;
+    height: 450px;
+    border-style: solid;
+    border-color: #19BD75;
+}
+.slides{
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 #containerArt{
     width:100%;
@@ -225,7 +230,7 @@ nav a:hover{
 #myvideo{
     display: block;
     margin: auto;
-    width: 70%;
+    max-width: 100%;
     height:auto;
 }
 #containerBttn{

@@ -1,3 +1,21 @@
+//Slideshow
+var slide = 0;
+loop();
+
+function loop() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    slide++;
+    
+    if (slide > x.length) {slide = 1}    
+    x[slide-1].style.display = "block";  
+    setTimeout(loop, 3000); // Change img every 3 seconds
+}
+
 //video
 var video = document.getElementById("myvideo");
 
