@@ -6,7 +6,7 @@ var y = 100;
 var radius = 75;
 var currentEndAngle = 0.8;
 var currentStartAngle = 0.8;
-var start1 = setInterval(draw, 15);
+var start = setInterval(draw, 15);
 var counter = 0; 
 var counterClockwise = false;
 
@@ -19,7 +19,6 @@ function draw() {
 	
 	var startAngle = currentStartAngle * Math.PI;
 	var startAngle2 = (currentStartAngle * Math.PI)+0.7;
-	var endAngle = (currentEndAngle) * Math.PI;
 	var endAngle2 = ((currentEndAngle) * Math.PI)+0.7;
 
 	currentEndAngle = currentEndAngle + 0.01;
@@ -82,7 +81,7 @@ function loop() {
 var video = document.getElementById("myvideo");
 
 //buttons
-var playbttn = document.getElementById("playbttn");
+var playbtn = document.getElementById("playbtn");
 var volCtrl = document.getElementById("volbtn");
 var fullScreenButton = document.getElementById("fullscreen");
 
@@ -99,13 +98,13 @@ var durtime = document.getElementById("durtimetext");
     function playVideo(){
         if (video.paused){
             video.play();
-            playbttn.innerHTML = '<i class="material-icons">pause</i>';
+            playbtn.innerHTML = '<i class="material-icons">pause</i>';
         } else{
             video.pause();
-            playbttn.innerHTML = '<i class="material-icons">play_arrow</i>';
+            playbtn.innerHTML = '<i class="material-icons">play_arrow</i>';
         }
     }
-    playbttn.addEventListener("click", playVideo);
+    playbtn.addEventListener("click", playVideo);
    
 //Mute Button
     function muteVolume(){
