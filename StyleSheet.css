@@ -5,102 +5,14 @@ body{
     font-family: Roboto, Arial;
 }
 
-/*css code imported from: http://danielstern.ca/range.css/#/  */
-/*input[type=range]*/
-input[type=range] {
-      -webkit-appearance: none;
-      width: 35%;
-      margin: 5px 0;
-      vertical-align: middle;
-    }
-    input[type=range]:focus {
-      outline: none;
-    }
-    input[type=range]::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 2px;
-      cursor: pointer;
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-      background: #b0e0e6;
-      border-radius: 3px;
-      border: 0px solid #010101;
-    }
-    input[type=range]::-webkit-slider-thumb {
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-      border: 1px solid #000000;
-      height: 12px;
-      width: 13px;
-      border-radius: 50px;
-      background: #ffffff;
-      cursor: pointer;
-      -webkit-appearance: none;
-      margin-top: -5px;
-    }
-    input[type=range]:focus::-webkit-slider-runnable-track {
-      background: #c3e8ec;
-    }
-    input[type=range]::-moz-range-track {
-      width: 100%;
-      height: 2px;
-      cursor: pointer;
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-      background: #b0e0e6;
-      border-radius: 3px;
-      border: 0px solid #010101;
-    }
-    input[type=range]::-moz-range-thumb {
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-      border: 1px solid #000000;
-      height: 12px;
-      width: 13px;
-      border-radius: 50px;
-      background: #ffffff;
-      cursor: pointer;
-    }
-    input[type=range]::-ms-track {
-      width: 100%;
-      height: 2px;
-      cursor: pointer;
-      background: transparent;
-      border-color: transparent;
-      color: transparent;
-    }
-    input[type=range]::-ms-fill-lower {
-      background: #9dd8e0;
-      border: 0px solid #010101;
-      border-radius: 6px;
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    }
-    input[type=range]::-ms-fill-upper {
-      background: #b0e0e6;
-      border: 0px solid #010101;
-      border-radius: 6px;
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    }
-    input[type=range]::-ms-thumb {
-      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-      border: 1px solid #000000;
-      height: 12px;
-      width: 13px;
-      border-radius: 50px;
-      background: #ffffff;
-      cursor: pointer;
-      height: 2px;
-    }
-    input[type=range]:focus::-ms-fill-lower {
-      background: #b0e0e6;
-    }
-    input[type=range]:focus::-ms-fill-upper {
-      background: #c3e8ec;
-    }
-
 /*page one*/
+
+/*header*/
 #containerHead{
     width:100%;
     height:40px;
     background-color: #19BD75;
 }
-    /*header*/
 #title{
     float: left;
     width:5%;
@@ -114,36 +26,21 @@ input[type=range] {
     color: black;
     cursor: pointer;
 }
-    div.fa-shopping-cart{
-        float: right;
-        margin:0px 10px;
-        width: 3%;
-        height: auto;
-        line-height: 40px;
-        text-align: center;
-        border-radius: 50%;
-        color: #fff;
-        font-size: 1.4em;
-    }
-    div.fa-shopping-cart:hover{
-        color: black;
-        cursor: pointer;
-    }
-    div.fa-cog{
-        float: right;
-        margin:0px 10px;
-        width: 3%;
-        height: auto;
-        line-height: 40px;
-        text-align: center;
-        border-radius: 50%;
-        color: #fff;
-        font-size: 1.4em;
-    }
-    div.fa-cog:hover{
-        color: black;
-        cursor: pointer;
-    }
+li.fa-cog{
+    float: right;
+    margin:0px 10px;
+    width: 5%;
+    height: auto;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4em;
+}
+li.fa-cog:hover{
+    color: black;
+    cursor: pointer;
+}
 
 /*Navigation Bar*/
 nav{
@@ -152,13 +49,13 @@ nav{
 }
 nav ul{
     list-style: none;
-    width: 90%;
+    width: 100%;
     text-align: center;
-    padding-left: 9%;
+    padding-left: 0%;
 }
 nav li{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 40px;
     height: 40px;
     width: 12%;
@@ -175,20 +72,44 @@ nav a:hover{
     color: black;
     cursor: pointer;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #19BD75;
+    width: 15%;
+    right: 0;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 2% 2%;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.show {display:block;}
 
 /*Logo*/
 #canvas{
     display: block;
     margin: auto;
-    width: auto;
-    height:150px;
+    width: 20%;
+    height:auto;
     }
 
 /*Slideshow*/
 #containerSlide{
     width: 850px;
     max-width:100%;
-    height: 450px;
+    min-width: 60%;
+    height: auto;
     display: block;
     margin: auto;
     border-style: solid;
@@ -211,12 +132,12 @@ nav a:hover{
     text-align: center;
     width: 100%;
   }
-  .box:after {
+.box:after {
     content: "";
     display: block;
     padding-bottom: 100%;
   }
-  .content {
+.content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -243,56 +164,122 @@ nav a:hover{
 }
 
 /*Video*/
-#myvideo{
-    display: block;
-    margin: auto;
+#containerA{
     width: 850px;
     max-width:100%;
-    height:450px;
+    min-width:60%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#myvideo{
+    width:100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 #containerBttn{
-    width: 850px;
+    width: 100%;
     height: auto;
     background-color: #19BD75;
     display: block;
     margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 #playbtn{
     color: #fff;
     background-color: transparent;
     border: none;
 }
+#playbtn:hover{
+    color: black;
+    cursor: pointer;
+}
 #volbtn{
     color: #fff;
     background-color: transparent;
     border: none;
+}
+#volbtn:hover{
+    color: black;
+    cursor: pointer;
 }
 #fullscreen{
     color: #fff;
     background-color: transparent;
     border: none;
 }
+#fullscreen:hover{
+    color: black;
+    cursor: pointer;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 35%;
+    height: 7px;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    opacity: 0.9;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+/*Footer*/
 footer{
     width:100%;
-    height:200px;
-    background-color: #DEDEDE;
+    height:170px;
+    background-color: #D3D3D3;
     color: #19BD75;
+    margin-top: 1%;
+    padding: 1%;
+}
+#containerTitle2{
+    width: 100%;
+    text-align: center;
 }
 #title2{
-    font-size: 2em;
-    padding: 0%;
-    margin: 0%;
+    font-size: 4em;
+    line-height: 60px;
+    display: inline-block;
 }
 #title2:hover{
     cursor: pointer;
     color: black;
 }
+
 footer ul{
     list-style: none;
-    display:block;
-    float:left;
-    font-family: 'Roboto', sans-serif;
-    width: 25%;
+    width: 100%;
+    text-align: center;
+    padding-left: 0%;
+}
+footer li{
+    line-height: 40px;
+    height: 40px;
+    width: 12%;
+    display: inline-block;
 }
 footer a{
     text-decoration: none;
@@ -303,6 +290,7 @@ footer a:hover{
     cursor: pointer;
     color: black;
 }
+
 div.fa-facebook-f{
         float: right;
         margin:0px 10px;
@@ -358,31 +346,4 @@ div.fa-youtube{
     div.fa-youtube:hover{
         color: black;
         cursor: pointer;
-}
-#email{
-    width: 10%;
-    float:right;
-    padding: 0.5%;
-    background-color: #19BD75;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-}
-#email::placeholder{
-    color: black;
-}
-#subscribe{
-    float:right;
-    padding:0.5%;
-    margin-right:1%;
-    background-color: black;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-}
-#subscribe:hover{
-    cursor: pointer;
-}
-#signature{
-    float: right;
-    margin-right: 1%;
-    font-family: 'Roboto', sans-serif;
 }
