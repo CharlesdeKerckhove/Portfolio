@@ -163,10 +163,11 @@ var video = document.getElementById("myvideo");
 
 
 //Dropdown Menu
+
 function dropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
+//Text Increase
 function textIncrease(){
     document.getElementById("home").style.fontSize = "1.3em";
     document.getElementById("newRange").style.fontSize = "1.3em";
@@ -174,6 +175,7 @@ function textIncrease(){
     document.getElementById("womens").style.fontSize = "1.3em";
     document.getElementById("aboutUs").style.fontSize = "1.3em";
 }
+//Text Decrease
 function textDecrease(){
     document.getElementById("home").style.fontSize = "1.2em";
     document.getElementById("newRange").style.fontSize = "1.2em";
@@ -181,6 +183,15 @@ function textDecrease(){
     document.getElementById("womens").style.fontSize = "1.2em";
     document.getElementById("aboutUs").style.fontSize = "1.2em";
 }
-function colourChange(color){
-    document.body.style.background = color;
+//Background Colour
+var backgroundB = false;
+function colourChange(){
+    if (backgroundB == false){
+    document.body.style.background = 'black';
+        backgroundB = true;
+    }
+    else{
+    document.body.style.background = '#fff';
+        backgroundB = false;
+    }
 }

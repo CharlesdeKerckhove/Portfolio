@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Primucus</title>
+<!--link to external files-->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/index.js" type="text/javascript" defer></script>
+
+<!--responsive layout-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <div id = "containerHead">
+            <nav role = "main"><ul>
+                <span id = "title"><a href = "index.html">Primucus</a></span>
+                <li id = "home"><a href = "index.html">Home</a></li>
+                <li id = "newRange"><a class = "active" href = "newRange.html">New Range</a></li>
+                <li id = "mens"><a href = "mens.html">Mens</a></li>
+                <li id = "womens"><a href = "womens.html">Womens</a></li>
+                <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
+                <li class="fas fa-cog" id = "settings" onclick = "dropdown()">
+                    <div id = "myDropdown" class = "dropdown-content">
+                        <a onclick = "textIncrease()">A+</a>
+                        <a onclick = "textDecrease()">A-</a>
+                        <a onclick = "colourChange()">Colour</a>
+                    </div>
+                </li>
+            </ul></nav>
+    </div>
+<br>
+        <canvas id="canvas" width="380" height="280"></canvas>
+<br> 
+    <div id = "productContainer">
+        <div id = "productTitle">
+            New Products
+        </div>
+        <div id = "Products">
+            <div  id = "firstImage">
+            <img class = "Image" src="images/edited/a1.jpg">
+            </div>
+            <div class = "Description">
+           
+            </div>
+            <div class = "Price">
+            3
+            </div>
+            <div id = "secondImage">
+            <img class = "Image" src="images/edited/a2.jpg">
+            </div>
+            <div class = "Description">
+            
+            </div>
+            <div class = "Price">
+            3
+            </div>
+            <div id = "thirdImage">
+            <img class = "Image" src="images/edited/a3.jpg">
+            </div>
+            <div class = "Description">
+            
+            </div>
+            <div class = "Price">
+            3
+            </div>
+        </div>
+    </div>
+   <footer>
+       <div id = "containerTitle2"><span id = "title2"><a class = "active" href = "index.html">Primucus</a></span></div>
+    <ul>
+        <li id = "home"><a class = "active" href = "index.html">Home</a></li>
+        <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+        <li id = "mens"><a href = "mens.html">Mens</a></li>
+        <li id = "womens"><a href = "womens.html">Womens</a></li>
+        <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
+    </ul>
+
+       <div id = "socialMedia">
+            <div class="fab fa-facebook-f"></div>
+            <div class="fab fa-twitter"></div>
+            <div class="fab fa-instagram"></div>
+            <div class="fab fa-youtube"></div>
+       </div>    
+       <span id = "signature">Designed and Built by 19003161</span>
+    </footer>
+</body>
+</html>
