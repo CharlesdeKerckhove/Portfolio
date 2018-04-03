@@ -161,7 +161,6 @@ var video = document.getElementById("myvideo");
     volBar.addEventListener("change", changeVolume);
     fullScreenButton.addEventListener("click", fullScreen);
 
-
 //Dropdown Menu
 
 function dropdown() {

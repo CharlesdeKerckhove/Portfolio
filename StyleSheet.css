@@ -358,15 +358,11 @@ div.fa-youtube{
     margin: auto;
 }
 #productTitle{
-    text-align: left;
     font-size: 2em;
     color: #fff;
     padding: 1%;
     margin: 1%;
     background-color: #19BD75;
-}
-#music{
-
 }
 #currencies{
     float: right;
@@ -378,6 +374,7 @@ div.fa-youtube{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 1em;
+    height: auto;
 }
 .Image{
     height:auto;
@@ -404,4 +401,14 @@ div.fa-youtube{
 }
 .text{
     font-size: 1.5em;
+}
+#musicContainer{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1%;
+}
+#music{
+    padding: 1%;
+    display: block;
+    margin: auto;
 }
