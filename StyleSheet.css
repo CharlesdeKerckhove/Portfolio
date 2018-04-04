@@ -382,6 +382,39 @@ div.fa-youtube{
     background-color: #19BD75;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+}
+.enlargedImages{
+    margin: auto;
+    display: block;
+    padding-top: 5%;
+    width: 850px;
+    max-width: 100%;
+    opacity: 1;
+}
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dimmer {
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 1;
 }
 .Description{
     height:auto;

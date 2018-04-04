@@ -11,7 +11,8 @@
 <!--responsive layout-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body>
+<body onload="pageTwo()">
+
     <div id = "containerHead">
             <nav role = "main"><ul>
                 <span id = "title"><a href = "index.html">Primucus</a></span>
@@ -32,99 +33,103 @@
 <br>
         <canvas id="canvas" width="380" height="280"></canvas>
 <br> 
-    <div id = "productContainer">
-        <div id = "productTitle">
-            Newest Products
-            <select id = "currencies">
-                <option value = "gdp">GDP</option>
-                <option value = "usd">USD</option>
-                <option value = "eur">EUR</option>
-                <option value = "jpy">JPY</option>
-                <option value = "chf">CHF</option>
-            </select>
-        </div>
+<div id = "productContainer">
+    <div id = "productTitle">
+        Newest Products
+        <select id = "currencies">
+            <option value = "gdp">GDP</option>
+            <option value = "usd">USD</option>
+            <option value = "eur">EUR</option>
+            <option value = "jpy">JPY</option>
+            <option value = "chf">CHF</option>
+        </select>
+    </div>
         <div id = "Products">
             <!--images-->
                 <div  id = "firstImage">
-                <img class = "Image" src="images/edited/a1.jpg">
+                <img class = "Image" src="images/edited/a1.jpg" alt = "Limited edition hat in grey.">
                 </div>
                 <div id = "thirdImage">
-                <img class = "Image" src="images/edited/a3.jpg">
+                <img class = "Image" src="images/edited/a3.jpg" alt = "Strong, durable gym bag. Essential for anyone competing in sports.">
                 </div>
                 <div id = "fifthImage">
-                <img class = "Image" src="images/edited/a5.jpg">
+                <img class = "Image" src="images/edited/a5.jpg" alt = "Black, protective phone case.">
                 </div>
                 <div id = "seventhImage">
-                <img class = "Image" src="images/edited/a7.jpg">
+                <img class = "Image" src="images/edited/a7.jpg" alt = "Black 100% cotton towel.">
                 </div>
             <!--descriptions-->
-            <div class = "Description">
-                <span class = "text">Limited edition hat in grey.</span>
-            </div>
-            <div class = "Description">
-                <span class = "text">Strong, durable gym bag. Essential for anyone competing in sports.</span>
-            </div>
-            <div class = "Description">
-                <span class = "text">Black, protective phone case.</span>
-            </div>
-            <div class = "Description">
-                <span class = "text">Black 100% cotton towel.</span>
-            </div>
+                <div class = "Description">
+                    <span class = "text">Limited edition hat in grey.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Strong, durable gym bag. Essential for anyone competing in sports.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Black, protective phone case.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Black 100% cotton towel.</span>
+                </div>
             <!--prices-->
-            <div class = "Price">
-            3
-            </div>
-            <div class = "Price">
-            3
-            </div>
-            <div class = "Price">
-            3
-            </div>
-            <div class = "Price">
-            3
-            </div>
-            
+                <div class = "Price">
+                3
+                </div>
+                <div class = "Price">
+                3
+                </div>
+                <div class = "Price">
+                3
+                </div>
+                <div class = "Price">
+                3
+                </div>
             <!--images-->
-            <div id = "secondImage">
-            <img class = "Image" src="images/edited/a2.jpg">
-            </div>
-            <div id = "fourthImage">
-            <img class = "Image" src="images/edited/a4.jpg">
-            </div>
-            <div id = "sixthImage">
-            <img class = "Image" src="images/edited/a6.jpg">
-            </div>
-            <div id = "eigthImage">
-            <img class = "Image" src="images/edited/a8.jpg">
-            </div>
+                <div id = "secondImage">
+                <img class = "Image" src="images/edited/a2.jpg">
+                </div>
+                <div id = "fourthImage">
+                <img class = "Image" src="images/edited/a4.jpg">
+                </div>
+                <div id = "sixthImage">
+                <img class = "Image" src="images/edited/a6.jpg">
+                </div>
+                <div id = "eigthImage">
+                <img class = "Image" src="images/edited/a8.jpg">
+                </div>
             <!--descriptions-->
-            <div class = "Description">
-                <span class = "text">Limited edition hat in white.</span>
-            </div>
-            <div class = "Description">
-                <span class = "text">Air tight 1 litre protein shake bottle.</span>
-            </div>
-            <div class = "Description">
-                <span class = "text">Rubber wrist bands.</span>
-            </div>
-            <div class = "Description">
-                <span class = "text">Attachable 1 litre drinking bottle.</span>
-            </div>
+                <div class = "Description">
+                    <span class = "text">Limited edition hat in white.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Air tight 1 litre protein shake bottle.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Rubber wrist bands.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Attachable 1 litre drinking bottle.</span>
+                </div>
             <!--prices-->
-            <div class = "Price">
-            3
-            </div>    
-            <div class = "Price">
-            3
-            </div>
-            <div class = "Price">
-            3
-            </div>
-            <div class = "Price">
-            3
-            </div>
+                <div class = "Price">
+                3
+                </div>    
+                <div class = "Price">
+                3
+                </div>
+                <div class = "Price">
+                3
+                </div>
+                <div class = "Price">
+                3
+                </div>
         </div>
+    <div id = "dimmer" class = "dimmer">
+        <span id = "close"> &times;</span>
+        <img class = "enlargedImages" id = "enlargeImg">
+        <div id = "caption"></div>
     </div>
+</div>
     <div id = "musicContainer">
         Today's motivational song to help you at the gym is - Eye of the Tiger by Survivor:
     <audio controls id = "music">

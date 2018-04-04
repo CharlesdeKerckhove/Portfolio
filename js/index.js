@@ -54,6 +54,41 @@ function drawLogo(startAngle, endAngle){
     ctx.stroke();
 }
 
+//Dropdown Menu
+
+function dropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+//Text Increase
+function textIncrease(){
+    document.getElementById("home").style.fontSize = "1.3em";
+    document.getElementById("newRange").style.fontSize = "1.3em";
+    document.getElementById("mens").style.fontSize = "1.3em";
+    document.getElementById("womens").style.fontSize = "1.3em";
+    document.getElementById("aboutUs").style.fontSize = "1.3em";
+}
+//Text Decrease
+function textDecrease(){
+    document.getElementById("home").style.fontSize = "1.2em";
+    document.getElementById("newRange").style.fontSize = "1.2em";
+    document.getElementById("mens").style.fontSize = "1.2em";
+    document.getElementById("womens").style.fontSize = "1.2em";
+    document.getElementById("aboutUs").style.fontSize = "1.2em";
+}
+//Background Colour
+var backgroundB = false;
+function colourChange(){
+    if (backgroundB == false){
+    document.body.style.background = 'black';
+        backgroundB = true;
+    }
+    else{
+    document.body.style.background = '#fff';
+        backgroundB = false;
+    }
+}
+
+function pageOne(){
 //Slideshow
 var slide = 0;
 loop();
@@ -160,37 +195,26 @@ var video = document.getElementById("myvideo");
     seekbar.addEventListener("mouseup", vidPlay);
     volBar.addEventListener("change", changeVolume);
     fullScreenButton.addEventListener("click", fullScreen);
+}
 
-//Dropdown Menu
-
-function dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function pageTwo(){
+//Animated Image
+var productContainer = document.getElementById("productContainer");
+var images = productContainer.getElementsByClassName("Image");
+var dimmer = document.getElementById("dimmer");
+var enlargeImg = document.getElementById("enlargeImg");
+var captiontxt = document.getElementById("caption");
+    
+function enlarge(){
+    dimmer.style.visibility = " visible";
+    enlargeImg.src = this.src;
+    captiontxt.innerHTML = this.alt;
 }
-//Text Increase
-function textIncrease(){
-    document.getElementById("home").style.fontSize = "1.3em";
-    document.getElementById("newRange").style.fontSize = "1.3em";
-    document.getElementById("mens").style.fontSize = "1.3em";
-    document.getElementById("womens").style.fontSize = "1.3em";
-    document.getElementById("aboutUs").style.fontSize = "1.3em";
-}
-//Text Decrease
-function textDecrease(){
-    document.getElementById("home").style.fontSize = "1.2em";
-    document.getElementById("newRange").style.fontSize = "1.2em";
-    document.getElementById("mens").style.fontSize = "1.2em";
-    document.getElementById("womens").style.fontSize = "1.2em";
-    document.getElementById("aboutUs").style.fontSize = "1.2em";
-}
-//Background Colour
-var backgroundB = false;
-function colourChange(){
-    if (backgroundB == false){
-    document.body.style.background = 'black';
-        backgroundB = true;
+    var close = document.getElementById("close");
+    close.onclick = function(){
+        dimmer.style.visibility = "hidden";
     }
-    else{
-    document.body.style.background = '#fff';
-        backgroundB = false;
-    }
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", enlarge)};    
+    
 }
