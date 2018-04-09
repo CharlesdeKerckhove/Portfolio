@@ -206,6 +206,9 @@ var enlargeImg = document.getElementById("enlargeImg");
 var captiontxt = document.getElementById("caption");
 var close = document.getElementById("close");
 
+for (var i = 0; i < images.length; i++) {
+images[i].addEventListener("click", enlarge)};  
+    
 function enlarge(){
     dimmer.style.visibility = " visible";
     enlargeImg.src = this.src;
@@ -214,7 +217,6 @@ function enlarge(){
     close.onclick = function(){
     dimmer.style.visibility = "hidden";
     }
-for (var i = 0; i < images.length; i++) {
-  images[i].addEventListener("click", enlarge)};    
+  
     
 }
