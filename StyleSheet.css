@@ -273,6 +273,7 @@ div.fa-youtube{
     height: auto;
     display: block;
     margin: auto;
+    
 }
 #myvideo{
     width:100%;
@@ -346,6 +347,12 @@ div.fa-youtube{
     border-radius: 50%;
     background: #000000;
     cursor: pointer;
+}
+#seekbar{
+    width: 50%;
+}
+#volumeBar{
+    width: 10%;
 }
 
 /*page two*/

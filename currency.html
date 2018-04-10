@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>currency</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+</style>
+<body onload = "makeRequest()">
+<script defer>
+ //create and send XHR request
+function makeRequest() {
+    xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = responseMethod;
+    xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=GBP,EUR, JPY, CHF', true);
+    xhr.send(null);
+}
+//Handle XHR response – Callback Function
+function responseMethod() {
+    
+var info = document.getElementById("info");
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDGBP = response.quotes.USDGBP;
+            info.innerHTML = USDGBP; //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}
+</script>
+<div id = "info" style = "width:100%; height: auto;" >
+ 
+</div>
+</body>
+</html>

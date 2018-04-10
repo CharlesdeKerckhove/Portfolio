@@ -217,6 +217,167 @@ function enlarge(){
     close.onclick = function(){
     dimmer.style.visibility = "hidden";
     }
-  
+//Currencies 
+var productContainer = document.getElementById("productContainer");
+var prices = productContainer.getElementsByClassName("Price");
+var amount = 3;   
+    
+
+currencies.addEventListener("change", change);
+    
+function change() {
+var selectedValue = currencies.options[currencies.selectedIndex].value;
+    if(selectedValue == 0){
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethodUSD;
+        xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=USD', true);
+        xhr.send(null);
+    }
+    else if(selectedValue == 1){
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethodGBP;
+        xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=GBP', true);
+        xhr.send(null);
+    }
+    else if(selectedValue == 2){
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethodEUR;
+        xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=EUR', true);
+        xhr.send(null);
+    }
+    else if(selectedValue == 3){
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethodJPY;
+        xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=JPY', true);
+        xhr.send(null);
+    }
+    else if(selectedValue == 4){
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethodCAD;
+        xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=CAD', true);
+        xhr.send(null);
+    }
+    else if(selectedValue == 5){
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethodCHF;
+        xhr.open('GET', 'http://apilayer.net/api/live?access_key=a0e95c300b0241196076ba6964645330&format=1&currencies=CHF', true);
+        xhr.send(null);
+    }
+} 
+    
+function responseMethodUSD(){
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDUSD = response.quotes.USDUSD;
+            result = USDUSD * amount;
+            finalResult = (result).toFixed(2);
+//change all text in price class
+        [].slice.call( prices ).forEach(function ( div ) {
+        div.innerHTML = "$ " +finalResult;
+    });
+            //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}
+function responseMethodGBP(){
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDGBP = response.quotes.USDGBP;
+            result = USDGBP * amount;
+            finalResult = (result).toFixed(2);
+//change all text in price class
+        [].slice.call( prices ).forEach(function ( div ) {
+        div.innerHTML = "£ " +finalResult;
+    });
+            //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}
+function responseMethodEUR(){
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDEUR = response.quotes.USDEUR;
+            result = USDEUR * amount;
+            finalResult = (result).toFixed(2);
+//change all text in price class
+        [].slice.call( prices ).forEach(function ( div ) {
+        div.innerHTML = "€ " +finalResult;
+    });
+            //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}   
+function responseMethodJPY(){
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDJPY = response.quotes.USDJPY;
+            result = USDJPY * amount;
+            finalResult = (result).toFixed(2);
+//change all text in price class
+        [].slice.call( prices ).forEach(function ( div ) {
+        div.innerHTML = "¥ " +finalResult;
+    });
+            //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}
+function responseMethodCAD(){
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDCAD = response.quotes.USDCAD;
+            result = USDCAD * amount;
+            finalResult = (result).toFixed(2);
+//change all text in price class
+        [].slice.call( prices ).forEach(function ( div ) {
+        div.innerHTML = "$ " +finalResult;
+    });
+            //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}
+function responseMethodCHF(){
+    
+    if (xhr.readyState == 4) { // Ready
+        if (xhr.status == 200) { // HTTP OK
+            response = JSON.parse(xhr.responseText);
+            USDCHF = response.quotes.USDCHF;
+            result = USDCHF * amount;
+            finalResult = (result).toFixed(2);
+//change all text in price class
+        [].slice.call( prices ).forEach(function ( div ) {
+        div.innerHTML = "Fr. " +finalResult;
+    });
+            //Assuming Text else responseXML
+        }
+        else {
+            alert('There was a problem with the request.');
+        }
+    }
+}
     
 }
