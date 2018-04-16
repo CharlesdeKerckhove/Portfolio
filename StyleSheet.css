@@ -69,6 +69,12 @@ nav a:hover{
     color: black;
     cursor: pointer;
 }
+.active{
+    background-color: #CAE8D3;
+}
+.active a{
+    color: black;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -469,4 +475,20 @@ div.fa-youtube{
     padding: 1%;
     display: block;
     margin: auto;
+}
+/*About Us*/
+#mailingContainer{
+    background-color: #19BD75;
+    color: #fff;
+    text-align: center;
+    width: 850px;
+    max-width: 100%;
+    min-width: 60%;
+    display: block;
+    margin: auto;
+    
+}
+.mailingInput{
+    width: 80%;
+    line-height: ;
 }

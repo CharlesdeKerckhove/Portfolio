@@ -1,3 +1,4 @@
+
 //Logo
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
@@ -217,12 +218,13 @@ function enlarge(){
     close.onclick = function(){
     dimmer.style.visibility = "hidden";
     }
+    
 //Currencies 
 var productContainer = document.getElementById("productContainer");
 var prices = productContainer.getElementsByClassName("Price");
-var amount = 3;   
+var amount = document.getElementById("exactPrice");   
+var amountValue = amount.innerHTML;
     
-
 currencies.addEventListener("change", change);
     
 function change() {
@@ -271,11 +273,11 @@ function responseMethodUSD(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDUSD = response.quotes.USDUSD;
-            result = USDUSD * amount;
+            result = USDUSD * amountValue;
             finalResult = (result).toFixed(2);
 //change all text in price class
         [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "$ " +finalResult;
+        div.innerHTML = "&#36 " +finalResult;
     });
             //Assuming Text else responseXML
         }
@@ -290,12 +292,9 @@ function responseMethodGBP(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDGBP = response.quotes.USDGBP;
-            result = USDGBP * amount;
+            result = USDGBP * amountValue;
             finalResult = (result).toFixed(2);
-//change all text in price class
-        [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "£ " +finalResult;
-    });
+            amount.innerHTML = "&#163 " +finalResult;
             //Assuming Text else responseXML
         }
         else {
@@ -309,11 +308,11 @@ function responseMethodEUR(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDEUR = response.quotes.USDEUR;
-            result = USDEUR * amount;
+            result = USDEUR * amountValue;
             finalResult = (result).toFixed(2);
 //change all text in price class
         [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "€ " +finalResult;
+        div.innerHTML = "&#8364 " +finalResult;
     });
             //Assuming Text else responseXML
         }
@@ -328,11 +327,11 @@ function responseMethodJPY(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDJPY = response.quotes.USDJPY;
-            result = USDJPY * amount;
+            result = USDJPY * amountValue;
             finalResult = (result).toFixed(2);
 //change all text in price class
         [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "¥ " +finalResult;
+        div.innerHTML = "&#165 " +finalResult;
     });
             //Assuming Text else responseXML
         }
@@ -347,11 +346,11 @@ function responseMethodCAD(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDCAD = response.quotes.USDCAD;
-            result = USDCAD * amount;
+            result = USDCAD * amountValue;
             finalResult = (result).toFixed(2);
 //change all text in price class
         [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "$ " +finalResult;
+        div.innerHTML = "&#36 " +finalResult;
     });
             //Assuming Text else responseXML
         }
@@ -366,7 +365,7 @@ function responseMethodCHF(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDCHF = response.quotes.USDCHF;
-            result = USDCHF * amount;
+            result = USDCHF * amountValue;
             finalResult = (result).toFixed(2);
 //change all text in price class
         [].slice.call( prices ).forEach(function ( div ) {
