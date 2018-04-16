@@ -220,10 +220,18 @@ function enlarge(){
     }
     
 //Currencies 
-var productContainer = document.getElementById("productContainer");
-var prices = productContainer.getElementsByClassName("Price");
-var amount = document.getElementById("exactPrice");   
-var amountValue = amount.innerHTML;
+var amount = document.getElementsByClassName("exactPrice");
+    for (i =0; i < amount.length; i++){
+        amount[i].id = "price" + i;
+    }
+var amountValue0 = price0.innerHTML;
+var amountValue1 = price1.innerHTML;
+var amountValue2 = price2.innerHTML;
+var amountValue3 = price3.innerHTML;
+var amountValue4 = price4.innerHTML;
+var amountValue5 = price5.innerHTML;
+var amountValue6 = price6.innerHTML;
+var amountValue7 = price7.innerHTML;
     
 currencies.addEventListener("change", change);
     
@@ -273,12 +281,22 @@ function responseMethodUSD(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDUSD = response.quotes.USDUSD;
-            result = USDUSD * amountValue;
-            finalResult = (result).toFixed(2);
-//change all text in price class
-        [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "&#36 " +finalResult;
-    });
+                result0 = USDUSD * amountValue0;
+                result1 = USDUSD * amountValue1;
+                result2 = USDUSD * amountValue2;
+                result3 = USDUSD * amountValue3;
+                result4 = USDUSD * amountValue4;
+                result5 = USDUSD * amountValue5;
+                result6 = USDUSD * amountValue6;
+                result7 = USDUSD * amountValue7;
+            price0.innerHTML = "&#36 " +(result0).toFixed(2);
+            price1.innerHTML = "&#36 " +(result1).toFixed(2);
+            price2.innerHTML = "&#36 " +(result2).toFixed(2);
+            price3.innerHTML = "&#36 " +(result3).toFixed(2);
+            price4.innerHTML = "&#36 " +(result4).toFixed(2);
+            price5.innerHTML = "&#36 " +(result5).toFixed(2);
+            price6.innerHTML = "&#36 " +(result6).toFixed(2);
+            price7.innerHTML = "&#36 " +(result7).toFixed(2);
             //Assuming Text else responseXML
         }
         else {
@@ -292,9 +310,23 @@ function responseMethodGBP(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDGBP = response.quotes.USDGBP;
-            result = USDGBP * amountValue;
-            finalResult = (result).toFixed(2);
-            amount.innerHTML = "&#163 " +finalResult;
+                result0 = USDGBP * amountValue0;
+                result1 = USDGBP * amountValue1;
+                result2 = USDGBP * amountValue2;
+                result3 = USDGBP * amountValue3;
+                result4 = USDGBP * amountValue4;
+                result5 = USDGBP * amountValue5;
+                result6 = USDGBP * amountValue6;
+                result7 = USDGBP * amountValue7;
+            price0.innerHTML = "&#163 " +(result0).toFixed(2);
+            price1.innerHTML = "&#163 " +(result1).toFixed(2);
+            price2.innerHTML = "&#163 " +(result2).toFixed(2);
+            price3.innerHTML = "&#163 " +(result3).toFixed(2);
+            price4.innerHTML = "&#163 " +(result4).toFixed(2);
+            price5.innerHTML = "&#163 " +(result5).toFixed(2);
+            price6.innerHTML = "&#163 " +(result6).toFixed(2);
+            price7.innerHTML = "&#163 " +(result7).toFixed(2);
+            
             //Assuming Text else responseXML
         }
         else {
@@ -308,12 +340,22 @@ function responseMethodEUR(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDEUR = response.quotes.USDEUR;
-            result = USDEUR * amountValue;
-            finalResult = (result).toFixed(2);
-//change all text in price class
-        [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "&#8364 " +finalResult;
-    });
+                result0 = USDEUR * amountValue0;
+                result1 = USDEUR * amountValue1;
+                result2 = USDEUR * amountValue2;
+                result3 = USDEUR * amountValue3;
+                result4 = USDEUR * amountValue4;
+                result5 = USDEUR * amountValue5;
+                result6 = USDEUR * amountValue6;
+                result7 = USDEUR * amountValue7;
+            price0.innerHTML = "&#128 " +(result0).toFixed(2);
+            price1.innerHTML = "&#128 " +(result1).toFixed(2);
+            price2.innerHTML = "&#128 " +(result2).toFixed(2);
+            price3.innerHTML = "&#128 " +(result3).toFixed(2);
+            price4.innerHTML = "&#128 " +(result4).toFixed(2);
+            price5.innerHTML = "&#128 " +(result5).toFixed(2);
+            price6.innerHTML = "&#128 " +(result6).toFixed(2);
+            price7.innerHTML = "&#128 " +(result7).toFixed(2);
             //Assuming Text else responseXML
         }
         else {
@@ -327,12 +369,22 @@ function responseMethodJPY(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDJPY = response.quotes.USDJPY;
-            result = USDJPY * amountValue;
-            finalResult = (result).toFixed(2);
-//change all text in price class
-        [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "&#165 " +finalResult;
-    });
+                result0 = USDJPY * amountValue0;
+                result1 = USDJPY * amountValue1;
+                result2 = USDJPY * amountValue2;
+                result3 = USDJPY * amountValue3;
+                result4 = USDJPY * amountValue4;
+                result5 = USDJPY * amountValue5;
+                result6 = USDJPY * amountValue6;
+                result7 = USDJPY * amountValue7;
+            price0.innerHTML = "&#165 " +(result0).toFixed(2);
+            price1.innerHTML = "&#165 " +(result1).toFixed(2);
+            price2.innerHTML = "&#165 " +(result2).toFixed(2);
+            price3.innerHTML = "&#165 " +(result3).toFixed(2);
+            price4.innerHTML = "&#165 " +(result4).toFixed(2);
+            price5.innerHTML = "&#165 " +(result5).toFixed(2);
+            price6.innerHTML = "&#165 " +(result6).toFixed(2);
+            price7.innerHTML = "&#165 " +(result7).toFixed(2);
             //Assuming Text else responseXML
         }
         else {
@@ -346,12 +398,22 @@ function responseMethodCAD(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDCAD = response.quotes.USDCAD;
-            result = USDCAD * amountValue;
-            finalResult = (result).toFixed(2);
-//change all text in price class
-        [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "&#36 " +finalResult;
-    });
+                result0 = USDCAD * amountValue0;
+                result1 = USDCAD * amountValue1;
+                result2 = USDCAD * amountValue2;
+                result3 = USDCAD * amountValue3;
+                result4 = USDCAD * amountValue4;
+                result5 = USDCAD * amountValue5;
+                result6 = USDCAD * amountValue6;
+                result7 = USDCAD * amountValue7;
+            price0.innerHTML = "&#36 " +(result0).toFixed(2);
+            price1.innerHTML = "&#36 " +(result1).toFixed(2);
+            price2.innerHTML = "&#36 " +(result2).toFixed(2);
+            price3.innerHTML = "&#36 " +(result3).toFixed(2);
+            price4.innerHTML = "&#36 " +(result4).toFixed(2);
+            price5.innerHTML = "&#36 " +(result5).toFixed(2);
+            price6.innerHTML = "&#36 " +(result6).toFixed(2);
+            price7.innerHTML = "&#36 " +(result7).toFixed(2);
             //Assuming Text else responseXML
         }
         else {
@@ -365,12 +427,22 @@ function responseMethodCHF(){
         if (xhr.status == 200) { // HTTP OK
             response = JSON.parse(xhr.responseText);
             USDCHF = response.quotes.USDCHF;
-            result = USDCHF * amountValue;
-            finalResult = (result).toFixed(2);
-//change all text in price class
-        [].slice.call( prices ).forEach(function ( div ) {
-        div.innerHTML = "Fr. " +finalResult;
-    });
+                result0 = USDCHF * amountValue0;
+                result1 = USDCHF * amountValue1;
+                result2 = USDCHF * amountValue2;
+                result3 = USDCHF * amountValue3;
+                result4 = USDCHF * amountValue4;
+                result5 = USDCHF * amountValue5;
+                result6 = USDCHF * amountValue6;
+                result7 = USDCHF * amountValue7;
+            price0.innerHTML = "Fr. " +(result0).toFixed(2);
+            price1.innerHTML = "Fr. " +(result1).toFixed(2);
+            price2.innerHTML = "Fr. " +(result2).toFixed(2);
+            price3.innerHTML = "Fr. " +(result3).toFixed(2);
+            price4.innerHTML = "Fr. " +(result4).toFixed(2);
+            price5.innerHTML = "Fr. " +(result5).toFixed(2);
+            price6.innerHTML = "Fr. " +(result6).toFixed(2);
+            price7.innerHTML = "Fr. " +(result7).toFixed(2);
             //Assuming Text else responseXML
         }
         else {
