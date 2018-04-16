@@ -452,3 +452,6 @@ function responseMethodCHF(){
 }
     
 }
+function pageThree(){
+
+}

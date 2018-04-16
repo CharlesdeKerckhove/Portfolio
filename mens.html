@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Primucus</title>
+<!--link to external files-->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/index.js" type="text/javascript" defer></script>
+
+<!--responsive layout-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body onload="pageTwo()">
+
+    <div id = "containerHead">
+            <nav role = "main"><ul>
+                <span id = "title"><a href = "index.html">Primucus</a></span>
+                <li id = "home"><a href = "index.html">Home</a></li>
+                <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+                <li class = "active" id = "mens"><a href = "mens.html">Mens</a></li>
+                <li id = "womens"><a href = "womens.html">Womens</a></li>
+                <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
+                <li class="fas fa-cog" id = "settings" onclick = "dropdown()">
+                    <div id = "myDropdown" class = "dropdown-content">
+                        <a onclick = "textIncrease()">A+</a>
+                        <a onclick = "textDecrease()">A-</a>
+                        <a onclick = "colourChange()">Colour</a>
+                    </div>
+                </li>
+            </ul></nav>
+    </div>
+<br>
+        <canvas id="canvas" width="380" height="280"></canvas>
+<br> 
+<div id = "productContainer">
+    <div id = "productTitle">
+        Mens Clothing
+        <select id = "currencies">
+            <option class = "currencies" value = "0">USD</option>
+            <option class = "currencies" value = "1">GBP</option>
+            <option class = "currencies" value = "2">EUR</option>
+            <option class = "currencies" value = "3">JPY</option>
+            <option class = "currencies" value = "4">CAD</option>
+            <option class = "currencies" value = "5">CHF</option>
+        </select>
+    </div>
+        <div id = "Products">
+            <!--images-->
+                <div  id = "firstImage">
+                <img class = "Image" src="images/edited/m1.jpg" alt = "Black zip up jacket.">
+                </div>
+                <div id = "thirdImage">
+                <img class = "Image" src="images/edited/m3.jpg" alt = "Skin tight shirt in multiple colours.">
+                </div>
+                <div id = "fifthImage">
+                <img class = "Image" src="images/edited/m5.jpg" alt = "Tight red shorts ideal for running.">
+                </div>
+                <div id = "seventhImage">
+                <img class = "Image" src="images/edited/m7.jpg" alt = "Think, comfortable pullover.">
+                </div>
+            <!--descriptions-->
+                <div class = "Description">
+                    <span class = "text">Black zip up jacket.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Skin tight shirt in multiple colours.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Tight red shorts ideal for running.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Think, comfortable pullover.</span>
+                </div>
+            <!--prices-->
+                <div class = "Price">
+                    <span class = "exactPrice"> 17.99</span>
+                </div>
+                <div class = "Price">
+                    <span class = "exactPrice"> 13.50</span>
+                </div>
+                <div class = "Price">
+                    <span class = "exactPrice"> 11.99</span>
+                </div>
+                <div class = "Price">
+                    <span class = "exactPrice"> 28.99</span>
+                </div>
+            <!--images-->
+                <div id = "secondImage">
+                <img class = "Image" src="images/edited/m2.jpg" alt = "Short sleeve grey t-shirt.">
+                </div>
+                <div id = "fourthImage">
+                <img class = "Image" src="images/edited/m4.jpg" alt = "Sleeveless hoodie in several colours.">
+                </div>
+                <div id = "sixthImage">
+                <img class = "Image" src="images/edited/m6.jpg" alt = "Refined slim fit top">
+                </div>
+                <div id = "eigthImage">
+                <img class = "Image" src="images/edited/m8.jpg" alt = "Cozy grey tracksuit bottoms.">
+                </div>
+            <!--descriptions-->
+                <div class = "Description">
+                    <span class = "text">Short sleeve grey t-shirt.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Sleeveless hoodie in several colours.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Refined slim fit top.</span>
+                </div>
+                <div class = "Description">
+                    <span class = "text">Cozy grey tracksuit bottoms.</span>
+                </div>
+            <!--prices-->
+                <div class = "Price">
+                    <span class = "exactPrice"> 13.50</span>
+                </div>    
+                <div class = "Price">
+                    <span class = "exactPrice"> 24.99</span>
+                </div>
+                <div class = "Price">
+                    <span class = "exactPrice"> 13.50</span>
+                </div>
+                <div class = "Price">
+                    <span class = "exactPrice"> 26.99</span>
+                </div>
+        </div>
+    <div id = "dimmer" class = "dimmer">
+        <span id = "close"> &times;</span>
+        <img class = "enlargedImages2" id = "enlargeImg">
+        <div id = "caption"></div>
+    </div>
+</div>
+    <div id = "musicContainer">
+        Today's motivational song to help you at the gym is - Eye of the Tiger by Survivor:
+    <audio controls id = "music">
+              <source src="media/music.ogg" type="audio/ogg">
+              <source src="media/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </div>
+   <footer>
+       <div id = "containerTitle2"><span id = "title2"><a href = "index.html">Primucus</a></span></div>
+    <ul>
+        <li id = "home"><a href = "index.html">Home</a></li>
+        <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+        <li id = "mens"><a href = "mens.html">Mens</a></li>
+        <li id = "womens"><a href = "womens.html">Womens</a></li>
+        <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
+    </ul>
+
+       <div id = "socialMedia">
+            <div class="fab fa-facebook-f"></div>
+            <div class="fab fa-twitter"></div>
+            <div class="fab fa-instagram"></div>
+            <div class="fab fa-youtube"></div>
+       </div>    
+       <span id = "signature">Designed and Built by 19003161</span>
+    </footer>
+</body>
+</html>

@@ -374,7 +374,7 @@ div.fa-youtube{
     font-size: 2em;
     color: #fff;
     padding: 1%;
-    margin: 1%;
+    margin-bottom: 1%;
     background-color: #19BD75;
 }
 #currencies{
@@ -405,6 +405,14 @@ div.fa-youtube{
     max-width: 100%;
     opacity: 1;
 }
+.enlargedImages2{
+    margin: auto;
+    display: block;
+    padding-top: 5%;
+    width: 650px;
+    max-width: 100%;
+    opacity: 1;
+}
 #caption {
     margin: auto;
     display: block;
@@ -415,7 +423,7 @@ div.fa-youtube{
     padding: 10px 0;
     height: 150px;
 }
-.enlargedImages, #caption {    
+.enlargedImages, .enlargeImages2, #caption {    
     animation-name: zoom;
     animation-duration: 2s;
 }
@@ -476,6 +484,8 @@ div.fa-youtube{
     display: block;
     margin: auto;
 }
+/*page three*/
+
 /*About Us*/
 #mailingContainer{
     background-color: #19BD75;
@@ -486,9 +496,11 @@ div.fa-youtube{
     min-width: 60%;
     display: block;
     margin: auto;
-    
+    font-size: 1.6em;
+    padding: 1%;
 }
 .mailingInput{
     width: 80%;
-    line-height: ;
+    line-height: 25px;
+    font-size: 0.8em;
 }
