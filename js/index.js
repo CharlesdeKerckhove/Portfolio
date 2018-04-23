@@ -220,7 +220,8 @@ function enlarge(){
     }
     
 //Currencies 
-var amount = document.getElementsByClassName("exactPrice");
+var sign = document.getElementsByClassName("symbol");
+    var amount = document.getElementsByClassName("exactPrice");
     for (i =0; i < amount.length; i++){
         amount[i].id = "price" + i;
     }
@@ -289,14 +290,16 @@ function responseMethodUSD(){
                 result5 = USDUSD * amountValue5;
                 result6 = USDUSD * amountValue6;
                 result7 = USDUSD * amountValue7;
-            price0.innerHTML = "&#36 " +(result0).toFixed(2);
-            price1.innerHTML = "&#36 " +(result1).toFixed(2);
-            price2.innerHTML = "&#36 " +(result2).toFixed(2);
-            price3.innerHTML = "&#36 " +(result3).toFixed(2);
-            price4.innerHTML = "&#36 " +(result4).toFixed(2);
-            price5.innerHTML = "&#36 " +(result5).toFixed(2);
-            price6.innerHTML = "&#36 " +(result6).toFixed(2);
-            price7.innerHTML = "&#36 " +(result7).toFixed(2);
+        for (i =0; i < sign.length; i++){
+        sign[i].innerHTML = "&#36 ";}
+            price0.innerHTML = result0.toFixed(2);
+            price1.innerHTML = result1.toFixed(2);
+            price2.innerHTML = result2.toFixed(2);
+            price3.innerHTML = result3.toFixed(2);
+            price4.innerHTML = result4.toFixed(2);
+            price5.innerHTML = result5.toFixed(2);
+            price6.innerHTML = result6.toFixed(2);
+            price7.innerHTML = result7.toFixed(2);
             //Assuming Text else responseXML
         }
         else {
@@ -318,16 +321,16 @@ function responseMethodGBP(){
                 result5 = USDGBP * amountValue5;
                 result6 = USDGBP * amountValue6;
                 result7 = USDGBP * amountValue7;
-            price0.innerHTML = "&#163 " +(result0).toFixed(2);
-            price1.innerHTML = "&#163 " +(result1).toFixed(2);
-            price2.innerHTML = "&#163 " +(result2).toFixed(2);
-            price3.innerHTML = "&#163 " +(result3).toFixed(2);
-            price4.innerHTML = "&#163 " +(result4).toFixed(2);
-            price5.innerHTML = "&#163 " +(result5).toFixed(2);
-            price6.innerHTML = "&#163 " +(result6).toFixed(2);
-            price7.innerHTML = "&#163 " +(result7).toFixed(2);
-            
-            //Assuming Text else responseXML
+        for (i =0; i < sign.length; i++){
+        sign[i].innerHTML = "&#163 ";}
+            price0.innerHTML = result0.toFixed(2);
+            price1.innerHTML = result1.toFixed(2);
+            price2.innerHTML = result2.toFixed(2);
+            price3.innerHTML = result3.toFixed(2);
+            price4.innerHTML = result4.toFixed(2);
+            price5.innerHTML = result5.toFixed(2);
+            price6.innerHTML = result6.toFixed(2);
+            price7.innerHTML = result7.toFixed(2);
         }
         else {
             alert('There was a problem with the request.');
@@ -348,15 +351,16 @@ function responseMethodEUR(){
                 result5 = USDEUR * amountValue5;
                 result6 = USDEUR * amountValue6;
                 result7 = USDEUR * amountValue7;
-            price0.innerHTML = "&#128 " +(result0).toFixed(2);
-            price1.innerHTML = "&#128 " +(result1).toFixed(2);
-            price2.innerHTML = "&#128 " +(result2).toFixed(2);
-            price3.innerHTML = "&#128 " +(result3).toFixed(2);
-            price4.innerHTML = "&#128 " +(result4).toFixed(2);
-            price5.innerHTML = "&#128 " +(result5).toFixed(2);
-            price6.innerHTML = "&#128 " +(result6).toFixed(2);
-            price7.innerHTML = "&#128 " +(result7).toFixed(2);
-            //Assuming Text else responseXML
+        for (i =0; i < sign.length; i++){
+        sign[i].innerHTML = "&#128 ";}
+            price0.innerHTML = result0.toFixed(2);
+            price1.innerHTML = result1.toFixed(2);
+            price2.innerHTML = result2.toFixed(2);
+            price3.innerHTML = result3.toFixed(2);
+            price4.innerHTML = result4.toFixed(2);
+            price5.innerHTML = result5.toFixed(2);
+            price6.innerHTML = result6.toFixed(2);
+            price7.innerHTML = result7.toFixed(2);
         }
         else {
             alert('There was a problem with the request.');
@@ -377,15 +381,16 @@ function responseMethodJPY(){
                 result5 = USDJPY * amountValue5;
                 result6 = USDJPY * amountValue6;
                 result7 = USDJPY * amountValue7;
-            price0.innerHTML = "&#165 " +(result0).toFixed(2);
-            price1.innerHTML = "&#165 " +(result1).toFixed(2);
-            price2.innerHTML = "&#165 " +(result2).toFixed(2);
-            price3.innerHTML = "&#165 " +(result3).toFixed(2);
-            price4.innerHTML = "&#165 " +(result4).toFixed(2);
-            price5.innerHTML = "&#165 " +(result5).toFixed(2);
-            price6.innerHTML = "&#165 " +(result6).toFixed(2);
-            price7.innerHTML = "&#165 " +(result7).toFixed(2);
-            //Assuming Text else responseXML
+        for (i =0; i < sign.length; i++){
+        sign[i].innerHTML = "&#165 ";}
+            price0.innerHTML = result0.toFixed(2);
+            price1.innerHTML = result1.toFixed(2);
+            price2.innerHTML = result2.toFixed(2);
+            price3.innerHTML = result3.toFixed(2);
+            price4.innerHTML = result4.toFixed(2);
+            price5.innerHTML = result5.toFixed(2);
+            price6.innerHTML = result6.toFixed(2);
+            price7.innerHTML = result7.toFixed(2);
         }
         else {
             alert('There was a problem with the request.');
@@ -406,15 +411,16 @@ function responseMethodCAD(){
                 result5 = USDCAD * amountValue5;
                 result6 = USDCAD * amountValue6;
                 result7 = USDCAD * amountValue7;
-            price0.innerHTML = "&#36 " +(result0).toFixed(2);
-            price1.innerHTML = "&#36 " +(result1).toFixed(2);
-            price2.innerHTML = "&#36 " +(result2).toFixed(2);
-            price3.innerHTML = "&#36 " +(result3).toFixed(2);
-            price4.innerHTML = "&#36 " +(result4).toFixed(2);
-            price5.innerHTML = "&#36 " +(result5).toFixed(2);
-            price6.innerHTML = "&#36 " +(result6).toFixed(2);
-            price7.innerHTML = "&#36 " +(result7).toFixed(2);
-            //Assuming Text else responseXML
+        for (i =0; i < sign.length; i++){
+        sign[i].innerHTML = "&#36 ";}
+            price0.innerHTML = result0.toFixed(2);
+            price1.innerHTML = result1.toFixed(2);
+            price2.innerHTML = result2.toFixed(2);
+            price3.innerHTML = result3.toFixed(2);
+            price4.innerHTML = result4.toFixed(2);
+            price5.innerHTML = result5.toFixed(2);
+            price6.innerHTML = result6.toFixed(2);
+            price7.innerHTML = result7.toFixed(2);
         }
         else {
             alert('There was a problem with the request.');
@@ -435,15 +441,16 @@ function responseMethodCHF(){
                 result5 = USDCHF * amountValue5;
                 result6 = USDCHF * amountValue6;
                 result7 = USDCHF * amountValue7;
-            price0.innerHTML = "Fr. " +(result0).toFixed(2);
-            price1.innerHTML = "Fr. " +(result1).toFixed(2);
-            price2.innerHTML = "Fr. " +(result2).toFixed(2);
-            price3.innerHTML = "Fr. " +(result3).toFixed(2);
-            price4.innerHTML = "Fr. " +(result4).toFixed(2);
-            price5.innerHTML = "Fr. " +(result5).toFixed(2);
-            price6.innerHTML = "Fr. " +(result6).toFixed(2);
-            price7.innerHTML = "Fr. " +(result7).toFixed(2);
-            //Assuming Text else responseXML
+        for (i =0; i < sign.length; i++){
+        sign[i].innerHTML = "Fr. ";}
+            price0.innerHTML = result0.toFixed(2);
+            price1.innerHTML = result1.toFixed(2);
+            price2.innerHTML = result2.toFixed(2);
+            price3.innerHTML = result3.toFixed(2);
+            price4.innerHTML = result4.toFixed(2);
+            price5.innerHTML = result5.toFixed(2);
+            price6.innerHTML = result6.toFixed(2);
+            price7.innerHTML = result7.toFixed(2);
         }
         else {
             alert('There was a problem with the request.');
