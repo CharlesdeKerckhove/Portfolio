@@ -460,5 +460,25 @@ function responseMethodCHF(){
     
 }
 function pageThree(){
-
+var fname = document.getElementById("firstName");
+var sname = document.getElementById("lastName");
+var email = document.getElementById("emailaddress");
+    function sendData() {
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMethod;
+        xhr.open('POST', 'http://www.talade.worcestercomputing.com/mailing.php', true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send("fname = value & sname = value & email = emailaddress");
+        console.log("2");
+    }
+    function responseMethod() {
+        if (xhr.readyState == 4) { 
+        if (xhr.status == 200) { 
+            alert(xhr.responseText); 
+        }
+        else {
+            alert('There was a problem with the request.');
+            }
+        }
+    }
 }

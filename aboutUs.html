@@ -35,10 +35,11 @@
 <br> 
 <section id = "mailingContainer" style = height:600px;>
    <span>Sign Up For Our Mailing List For Updates On Our Newest Products And Offers</span>
-    <form>
-        <p>First Name: <br><input class = "mailingInput" type = "text" name = "firstName" placeholder="First Name" required></p>
-        <p>Surname: <br><input class = "mailingInput" type = "text" name = "lastName" placeholder="Surname" required></p>
-        <p>Email Address: <br><input class = "mailingInput" type = "email" name = "emailaddress" placeholder="name@domain.com" required></p>
+    <form id = "form_Id">
+        <p>First Name: <br><input class = "mailingInput" type = "text" id = "firstName" placeholder="First Name" required></p>
+        <p>Surname: <br><input class = "mailingInput" type = "text" id = "lastName" placeholder="Surname" required></p>
+        <p>Email Address: <br><input class = "mailingInput" type = "email" id = "emailaddress" placeholder="name@domain.com" required></p>
+        <input type = "submit" value = "Sign Up" onclick = "sendData()"/>
     </form>
 </section>
    <footer>
