@@ -6,12 +6,13 @@
     <link href="StyleSheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="js/index.js" type="text/javascript" defer></script>
+    <script src="js/general.js" type="text/javascript" defer></script>
+    <script src="js/aboutUs.js" type="text/javascript" defer></script>
 
 <!--responsive layout-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body onload="pageThree()">
+<body>
 
     <div id = "containerHead">
             <nav role = "main"><ul>
@@ -36,10 +37,10 @@
 <section id = "mailingContainer" style = height:600px;>
    <span>Sign Up For Our Mailing List For Updates On Our Newest Products And Offers</span>
     <form id = "form_Id">
-        <p>First Name: <br><input class = "mailingInput" type = "text" id = "firstName" placeholder="First Name" required></p>
-        <p>Surname: <br><input class = "mailingInput" type = "text" id = "lastName" placeholder="Surname" required></p>
-        <p>Email Address: <br><input class = "mailingInput" type = "email" id = "emailaddress" placeholder="name@domain.com" required></p>
-        <input type = "submit" value = "Sign Up" onclick = "sendData()"/>
+        <p>First Name: <br><input class = "mailingInput" type = "text" id = "firstName" placeholder="First Name" autocomplete = "given-name" required></p>
+        <p>Surname: <br><input class = "mailingInput" type = "text" id = "lastName" placeholder="Surname" autocomplete = "family-name" required></p>
+        <p>Email Address: <br><input class = "mailingInput" type = "email" id = "emailaddress" placeholder="name@domain.com" autocomplete = "email" required></p>
+        <input type = "submit" value = "Sign Up" id = "sendData"/>
     </form>
 </section>
    <footer>
