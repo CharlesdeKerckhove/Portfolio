@@ -1,11 +1,11 @@
+var xhr;
+var form = document.getElementById("form_Id");
 var sendData = document.getElementById("sendData");
 var fname = document.getElementById("firstName");
 var lname = document.getElementById("lastName");
 var email = document.getElementById("emailaddress");
-var form;
-var xhr;
-    
-    function sendData() {
+var output = document.getElementById("output");    
+    function post() {
         event.preventDefault();
         xhr = new XMLHttpRequest();
         xhr.onreadystatechange = responseMethod;
@@ -17,13 +17,11 @@ var xhr;
     function responseMethod() {
         if (xhr.readyState == 4) { 
         if (xhr.status == 200) { 
-                    console.log("2");
-
-            console.log(xhr.responseText); 
+            output.innerHTML = xhr.responseText; 
         }
         else {
             console.log('There was a problem with the request.');
             }
         }
     }
- sendData.addEventListener("submit", sendData);   
+ form_Id.addEventListener("submit", post);   
