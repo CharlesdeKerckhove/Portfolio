@@ -9,6 +9,9 @@ body{
     background-color: #fff;
     font-family: Roboto, Arial;
 }
+p{
+    margin-top: 1%;
+}
 
 /*Header*/
 #containerHead{

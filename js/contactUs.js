@@ -1,9 +1,9 @@
 var xhr;
 var form = document.getElementById("form_Id");
 var sendData = document.getElementById("sendData");
-var fname = document.getElementById("firstName");
-var lname = document.getElementById("lastName");
-var email = document.getElementById("emailaddress");
+var firstname = document.getElementById("firstName");
+var lastname = document.getElementById("lastName");
+var emailaddress = document.getElementById("emailaddress");
 var output = document.getElementById("output");    
     function post() {
         event.preventDefault();
@@ -11,8 +11,8 @@ var output = document.getElementById("output");
         xhr.onreadystatechange = responseMethod;
         xhr.open('POST', "http://www.talade.worcestercomputing.com/mailing.php", true);
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        formData = "firstname =" + fname.value + "& lastname =" + lname.value + "& emailaddress =" + email.value;
-        xhr.send(form);
+        formData = "firstname=" + firstname.value + "&lastname=" + lastname.value + "&emailaddress=" + emailaddress.value;
+        xhr.send(formData);
     }
     function responseMethod() {
         if (xhr.readyState == 4) { 
