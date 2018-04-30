@@ -1,5 +1,10 @@
 /*General*/
     /*green = #19BD75   rgba(25,189,117,0.3)  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: #fff;
     font-family: Roboto, Arial;
@@ -13,39 +18,32 @@ body{
 }
 #title{
     float: left;
-    width:5%;
+    width:10%;
     padding-left: 1%;
     color: #fff;
-    line-height: 38.5px;
+    line-height: 40px;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
 }
-li.fa-cog{
-    float: right;
-    margin:0px 10px;
-    width: 5%;
+#settings{
+    width: 10%;
     height: auto;
     line-height: 40px;
     text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1.4em;
 }
-li.fa-cog:hover{
-    color: black;
-    cursor: pointer;
+#settings:hover{
+    background-color: transparent;
 }
-
 /*Navigation Bar*/
 nav{
-    height: 40px;
-    line-height: 40px;
+
 }
 nav ul{
+    height: 40px;
+    line-height: 40px;
     list-style: none;
     width: 100%;
     text-align: center;
-    padding-left: 0%;
 }
 nav li{
     font-family: 'Roboto', sans-serif;
@@ -61,11 +59,12 @@ nav li{
 nav li:hover{
     background-color: #CAE8D3;
 }
-nav a{
+nav a, #dropbtn{
     text-decoration: none;
     color: #fff;
+    display: inline-block;
 }
-nav a:hover{
+nav a:hover, .dropdown:hover #dropbtn{
     color: black;
     cursor: pointer;
 }
@@ -75,18 +74,20 @@ nav a:hover{
 .active a{
     color: black;
 }
+.dropdown{
+    display: inline-block;
+}
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #19BD75;
-    width: 12%;
-    right: 1%;
+    width: inherit;
+    z-index: 1;
 }
 .dropdown-content a {
     color: #fff;
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-right: 2%;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -97,13 +98,7 @@ nav a:hover{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-.show {display:block;}
-#settings:hover{
-    background-color: transparent;
-}
+
 
 /*Logo*/
 #canvas{
@@ -120,7 +115,7 @@ footer{
     background-color: #CAE8D3;
     color: #19BD75;
     margin-top: 1%;
-    padding: 1%;
+    padding-top: 1%;
 }
 #containerTitle2{
     width: 100%;
@@ -488,10 +483,37 @@ div.fa-youtube{
 /*page three*/
 
 /*About Us*/
+#History{
+    background-color: #19BD75;
+    color: #fff;
+    height: auto;
+    width: 850px;
+    max-width: 100%;
+    min-width: 60%;
+    display: block;
+    margin: auto;
+    font-size: 1.6em;
+    padding: 1%;
+}
+#Managers{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.managers{
+    width: 95%;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background: #fff;
+}
+
+/*Contact Us*/
 #mailingContainer{
     background-color: #19BD75;
     color: #fff;
     text-align: center;
+    height: 600px;
     width: 850px;
     max-width: 100%;
     min-width: 60%;
@@ -504,4 +526,22 @@ div.fa-youtube{
     width: 80%;
     line-height: 25px;
     font-size: 0.8em;
+}
+#sendData{
+    line-height: 25px;
+    font-size: 0.8em;
+    padding: 1%;
+    width: 20%;
+    color: #19BD75;
+    background: #fff;
+    text-decoration: none;
+    border-style: none;
+}
+#sendData:hover{
+    cursor: pointer;
+    background: #CAE8D3;
+    color: #000000;
+}
+#output{
+    
 }

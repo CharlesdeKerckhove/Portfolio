@@ -17,15 +17,20 @@
             <nav role = "main"><ul>
                 <span id = "title"><a href = "index.html">Primucus</a></span>
                 <li id = "home"><a href = "index.html">Home</a></li>
-                <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+                <li id = "newRange"><a href = "newRange2.html">New Range</a></li>
                 <li id = "mens"><a href = "mens.html">Mens</a></li>
                 <li class = "active" id = "womens"><a href = "womens.html">Womens</a></li>
-                <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
-                <li class="fas fa-cog" id = "settings" onclick = "dropdown()">
-                    <div id = "myDropdown" class = "dropdown-content">
-                        <a onclick = "textIncrease()">A+</a>
-                        <a onclick = "textDecrease()">A-</a>
-                        <a onclick = "colourChange()">Colour</a>
+               <li class = "dropdown" id = "aboutUs"><a id = "dropbtn">About Us</a> 
+                    <div class = "dropdown-content">
+                        <a href = "aboutUs.html">History</a>
+                        <a href = "contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class = "dropdown" id = "settings"><a id = "dropbtn" class="fas fa-cog" ></a>
+                    <div class = "dropdown-content" id = "settingsDrop">
+                        <a id = "textIncrease">A+</a>
+                        <a id = "textDecrease">A-</a>
+                        <a id = "colourChange">Colour</a>
                     </div>
                 </li>
             </ul></nav>
@@ -143,11 +148,12 @@
        <div id = "containerTitle2"><span id = "title2"><a href = "index.html">Primucus</a></span></div>
     <ul>
         <li id = "home"><a href = "index.html">Home</a></li>
-        <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+        <li id = "newRange"><a href = "newRange2.html">New Range</a></li>
         <li id = "mens"><a href = "mens.html">Mens</a></li>
         <li id = "womens"><a href = "womens.html">Womens</a></li>
-        <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
-    </ul>
+        <li id = "aboutUs"><a href = "aboutUs.html">History</a></li>
+        <li id = "contactUs"><a href = "contactUs.html">Contact Us</a></li>
+   </ul>
 
        <div id = "socialMedia">
             <div class="fab fa-facebook-f"></div>

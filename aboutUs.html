@@ -18,15 +18,20 @@
             <nav role = "main"><ul>
                 <span id = "title"><a href = "index.html">Primucus</a></span>
                 <li id = "home"><a href = "index.html">Home</a></li>
-                <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+                <li id = "newRange"><a href = "newRange2.html">New Range</a></li>
                 <li id = "mens"><a href = "mens.html">Mens</a></li>
                 <li id = "womens"><a href = "womens.html">Womens</a></li>
-                <li class = "active" id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
-                <li class="fas fa-cog" id = "settings" onclick = "dropdown()">
-                    <div id = "myDropdown" class = "dropdown-content">
-                        <a onclick = "textIncrease()">A+</a>
-                        <a onclick = "textDecrease()">A-</a>
-                        <a onclick = "colourChange()">Colour</a>
+                <li class = "dropdown" id = "aboutUs"><a id = "dropbtn">About Us</a> 
+                    <div class = "dropdown-content">
+                        <a href = "aboutUs.html">History</a>
+                        <a href = "contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class = "dropdown" id = "settings"><a id = "dropbtn" class="fas fa-cog" ></a>
+                    <div class = "dropdown-content" id = "settingsDrop">
+                        <a id = "textIncrease">A+</a>
+                        <a id = "textDecrease">A-</a>
+                        <a id = "colourChange">Colour</a>
                     </div>
                 </li>
             </ul></nav>
@@ -34,26 +39,33 @@
 <br>
         <canvas id="canvas" width="380" height="280"></canvas>
 <br> 
-<section id = "mailingContainer" style = height:600px;>
-   <span>Sign Up For Our Mailing List For Updates On Our Newest Products And Offers</span>
-    <form id = "form_Id">
-        <p>First Name: <br><input class = "mailingInput" type = "text" id = "firstName" placeholder="First Name" autocomplete = "given-name" required></p>
-        <p>Surname: <br><input class = "mailingInput" type = "text" id = "lastName" placeholder="Surname" autocomplete = "family-name" required></p>
-        <p>Email Address: <br><input class = "mailingInput" type = "email" id = "emailaddress" placeholder="name@domain.com" autocomplete = "email" required></p>
-        <input type = "submit" value = "Sign Up" id = "sendData"/>
-    </form>
-<br>
-    <span id = "output"></span>
+<section id = "History">
+    <h3>Who are we?</h3>
+    
+    <p>
+    We were established in 2016 to supply both the equipment and clothing that athletic enthusiasts use to enhance their progress and push their potential. <br><br>
+    Primucus is all about getting people outside and the promotion of exercising and wants to encourage our community to use our products as part of an active lifestyle. <br><br>
+    We are a company full of passionate people all wanting one thing - A more active community. Welcome to our website from all of our community.</p>
+    
+    <div id = "Managers">
+        <image class = "managers" src = "images/edited/manager1.jpg"></image>
+        <image class = "managers" src = "images/edited/manager2.jpg"></image>
+        <image class = "managers" src = "images/edited/manager3.png"></image>
+        <span class = "managersTxt">Founder - Mark Banks</span>
+        <span class = "managersTxt">CEO - John Hamilton</span>
+        <span class = "managersTxt">Director - Patricia Lopez</span>
+    </div>
 </section>
    <footer>
        <div id = "containerTitle2"><span id = "title2"><a class = "active" href = "index.html">Primucus</a></span></div>
     <ul>
         <li id = "home"><a href = "index.html">Home</a></li>
-        <li id = "newRange"><a href = "newRange.html">New Range</a></li>
+        <li id = "newRange"><a href = "newRange2.html">New Range</a></li>
         <li id = "mens"><a href = "mens.html">Mens</a></li>
         <li id = "womens"><a href = "womens.html">Womens</a></li>
-        <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
-    </ul>
+        <li id = "aboutUs"><a href = "aboutUs.html">History</a></li>
+        <li id = "contactUs"><a href = "contactUs.html">Contact Us</a></li>
+   </ul>
 
        <div id = "socialMedia">
             <div class="fab fa-facebook-f"></div>

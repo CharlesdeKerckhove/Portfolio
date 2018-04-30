@@ -55,6 +55,10 @@ function drawLogo(startAngle, endAngle){
 }
 
 //Dropdown Menu
+var increase = document.getElementById("textIncrease");
+var decrease = document.getElementById("textDecrease");
+var colour = document.getElementById("colourChange");
+var backgroundB = false;
 
 function dropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -76,7 +80,6 @@ function textDecrease(){
     document.getElementById("aboutUs").style.fontSize = "1.2em";
 }
 //Background Colour
-var backgroundB = false;
 function colourChange(){
     if (backgroundB == false){
     document.body.style.background = 'black';
@@ -87,3 +90,6 @@ function colourChange(){
         backgroundB = false;
     }
 }
+increase.addEventListener("click", textIncrease);
+decrease.addEventListener("click", textDecrease);
+colour.addEventListener("click", colourChange);

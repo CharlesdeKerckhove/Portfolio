@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/general.js" type="text/javascript" defer></script>
     <script src="js/products.js" type="text/javascript" defer></script>
+
 <!--responsive layout-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-
     <div id = "containerHead">
             <nav role = "main"><ul>
                 <span id = "title"><a href = "index.html">Primucus</a></span>
@@ -20,12 +20,17 @@
                 <li class = "active" id = "newRange"><a href = "newRange.html">New Range</a></li>
                 <li id = "mens"><a href = "mens.html">Mens</a></li>
                 <li id = "womens"><a href = "womens.html">Womens</a></li>
-                <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
-                <li class="fas fa-cog" id = "settings" onclick = "dropdown()">
-                    <div id = "myDropdown" class = "dropdown-content">
-                        <a onclick = "textIncrease()">A+</a>
-                        <a onclick = "textDecrease()">A-</a>
-                        <a onclick = "colourChange()">Colour</a>
+                <li class = "dropdown" id = "aboutUs"><a id = "dropbtn">About Us</a> 
+                    <div class = "dropdown-content">
+                        <a href = "aboutUs.html">History</a>
+                        <a href = "contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class = "dropdown" id = "settings"><a id = "dropbtn" class="fas fa-cog" ></a>
+                    <div class = "dropdown-content" id = "settingsDrop">
+                        <a id = "textIncrease">A+</a>
+                        <a id = "textDecrease">A-</a>
+                        <a id = "colourChange">Colour</a>
                     </div>
                 </li>
             </ul></nav>
@@ -146,7 +151,8 @@
         <li id = "newRange"><a href = "newRange.html">New Range</a></li>
         <li id = "mens"><a href = "mens.html">Mens</a></li>
         <li id = "womens"><a href = "womens.html">Womens</a></li>
-        <li id = "aboutUs"><a href = "aboutUs.html">About Us</a></li>
+        <li id = "aboutUs"><a href = "aboutUs.html">History</a></li>
+        <li id = "contactUs"><a href = "contactUs.html">Contact Us</a></li>
     </ul>
 
        <div id = "socialMedia">
