@@ -59,25 +59,32 @@ var increase = document.getElementById("textIncrease");
 var decrease = document.getElementById("textDecrease");
 var colour = document.getElementById("colourChange");
 var backgroundB = false;
+var home = document.getElementById("home");
+var newRange = document.getElementById("newRange");
+var mens = document.getElementById("mens");
+var womens = document.getElementById("womens");
+var aboutUs = document.getElementById("aboutUs");
+var currentFontSize = "1.2em";
 
 function dropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+if (localStorage.getItem("fontSize")){
+    var storedSize = localStorage.getItem("fontSize");
+    setFontSize(storedSize);
+}
+function setFontSize(value){
+    document.querySelector(".navigation").style.fontSize = value;
+}
 //Text Increase
 function textIncrease(){
-    document.getElementById("home").style.fontSize = "1.3em";
-    document.getElementById("newRange").style.fontSize = "1.3em";
-    document.getElementById("mens").style.fontSize = "1.3em";
-    document.getElementById("womens").style.fontSize = "1.3em";
-    document.getElementById("aboutUs").style.fontSize = "1.3em";
+    localStorage.setItem("fontSize", "1.3em");
+    setFontSize("1.3em");
 }
 //Text Decrease
 function textDecrease(){
-    document.getElementById("home").style.fontSize = "1.2em";
-    document.getElementById("newRange").style.fontSize = "1.2em";
-    document.getElementById("mens").style.fontSize = "1.2em";
-    document.getElementById("womens").style.fontSize = "1.2em";
-    document.getElementById("aboutUs").style.fontSize = "1.2em";
+    localStorage.setItem("fontSize", "1.2em");
+    setFontSize("1.2em");
 }
 //Background Colour
 function colourChange(){

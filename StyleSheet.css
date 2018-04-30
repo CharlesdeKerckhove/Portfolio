@@ -38,8 +38,8 @@ p{
     background-color: transparent;
 }
 /*Navigation Bar*/
-nav{
-
+.navigation{
+    font-size: 1.2em;
 }
 nav ul{
     height: 40px;
@@ -50,7 +50,6 @@ nav ul{
 }
 nav li{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
     line-height: 40px;
     height: 40px;
     width: 12%;
@@ -548,4 +547,15 @@ div.fa-youtube{
 }
 #output{
     
+}
+/*404 Page*/
+#errorTxt{
+    width: 100%;
+    height: auto;
+    background-color: #19BD75;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6em;
 }
