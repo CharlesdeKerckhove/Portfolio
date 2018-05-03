@@ -849,6 +849,9 @@ div.fa-youtube:hover {
           .Description {
             font-size: 1.1em;
           }
+          #audioBttns {
+            font-size: 0.5em;
+          }
 /*Page Three*/
           #History {
             width: 95%;

@@ -11,11 +11,13 @@ function check() {
   }
 /*check local storage for last number if its the same as randomly generated number regenerate number and repeat util new number*/
   if (storedAd == num) {
+  console.log("repeated advert");
     var num = Math.floor(Math.random() * adverts.length);
     check();
   } else {
     adverts[num].style.display = "block";
     localStorage.setItem("ad", num);
+    console.log("new advert");
   }
 }
 check();
