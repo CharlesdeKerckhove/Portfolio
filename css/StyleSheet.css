@@ -1,6 +1,6 @@
 /*General*/
 
-/*Main Colours:   */
+/*Main Colours:   #0CCFFF (Strong blue) #EEFFFF (Pastel blue) */
 /*CSS reset */
 * {
   margin: 0;
@@ -26,11 +26,26 @@ p {
 
 #main {
   width: 100%;
-  height: 40px;
-  background-color: #19BD75;
+  height: auto;
+}
+
+#video{
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+#home{
+    float: left;
+    width: auto;
+    padding-left: 1%;
 }
 
 nav ul {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
   height: 40px;
   line-height: 40px;
   list-style: none;
@@ -39,6 +54,7 @@ nav ul {
 }
 
 nav li {
+  float: right;
   font-family: 'Roboto', sans-serif;
   line-height: 40px;
   height: 40px;
@@ -47,10 +63,6 @@ nav li {
   padding-right: 0%;
   text-align: center;
   display: inline-block;
-}
-
-nav li:hover {
-  background-color: #CAE8D3;
 }
 
 nav a,
@@ -62,16 +74,12 @@ nav a,
 
 nav a:hover,
 .dropdown:hover #dropbtn {
-  color: black;
+  color: #0CCFFF;
   cursor: pointer;
 }
 
-.active {
-  background-color: #CAE8D3;
-}
-
-.active a {
-  color: black;
+.active a{
+  color: #0CCFFF;
 }
 
 .dropdown {
@@ -81,7 +89,7 @@ nav a:hover,
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #19BD75;
+  background-color: #0CCFFF;
   width: inherit;
   z-index: 1;
 }
@@ -96,7 +104,7 @@ nav a:hover,
 }
 
 .dropdown-content a:hover {
-  background-color: #CAE8D3;
+  background-color: #EEFFFF;
   color: black;
 }
 
@@ -111,8 +119,8 @@ nav a:hover,
 footer {
   width: 100%;
   height: 170px;
-  background-color: #CAE8D3;
-  color: #19BD75;
+  background-color: #EEFFFF;
+  color: #0CCFFF;
   margin-top: 1%;
   padding-top: 1%;
 }
@@ -134,7 +142,7 @@ footer li {
 
 footer a {
   text-decoration: none;
-  color: #19BD75;
+  color: #0CCFFF;
   font-size: 1em;
 }
 
@@ -240,7 +248,7 @@ div.fa-youtube:hover {
     display: inline-block;
     width: 100%;
     height: 40px;
-    background-color: #19BD75;
+    background-color: #0CCFFF;
 }
 #main a:hover,
 .dropdown:hover #dropbtn {
