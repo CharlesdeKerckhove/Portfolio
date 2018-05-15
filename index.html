@@ -25,9 +25,9 @@
 <!--webpages-->
           <div class="dropdown-content">
             <a href="index.html">Charles de Kerckhove</a>
-            <a href="who.html">Who?</a>
-            <a href="what.html">What?</a>
-            <a href="why.html">Why?</a>     
+            <a href="#who">Who?</a>
+            <a href="#what">What?</a>
+            <a href="#why">Why?</a>     
 <!-- blog            <a href=""></a> -->
 <!-- templates            <a href=""></a> -->
           </div>
@@ -35,13 +35,13 @@
       </ul>
     </nav>
 <!--desktop nav bar--> 
-    <nav id="main">
+    <nav name = "main" id="main">
             <video id = "video" preload="auto" autoplay="false" loop = "loop" muted = "muted">
-                <source src="media/video.mp4" type = "video/mp4"/>
+                <source src="" type = "video/mp4"/>
                 Video not supported
             </video>
           <ul id = "navigation">
-            <li id = "home" class="active"><a href="index.html">Charles de Kerckhove</a></li>
+            <li id = "home" class="active"><a href="#main">Charles de Kerckhove</a></li>
             <li><a href="#why">Why?</a></li>
             <li><a href="#what">What?</a></li>
             <li><a href="#who">Who?</a></li>
@@ -53,14 +53,75 @@
             </li> -->
           </ul>
     </nav>
-    <h1 name = "who">Who am I?</h1> 
+  <div id = "who">
+    <h1><a name = "who">Who am I?</a></h1> 
         <h2>Let me tell you what makes me, well me.</h2>
+      <p>I am a confident, self-motivated web designer who is keen to work within a team of other talented, creative and passionate colleagues. I have excellent written and verbal communication skills whilst also being a systematical problem solver who enjoys challenges and works well under pressure.</p>
+      <p>Moreover, I am a second year computing student that is hoping to gain further experience in the web design industry to further my education. Learning whilst on the job would expand my knowledge of the work required and processes that businesses within the industry use from day-to-day. </p>
+      <p>I love being outdoors and therefore I jumped at the opportunity to take part in the Duke of Edinburgh Silver and Bronze awards in 2014 & 2013 respectively. I am trained in Emergency First Aid by St John's Ambulance and gained a FA Level 1 Coaching Award so I could coach my local football team in my spare time. Alongside coaching football, I competed for over ten years both at university and for local teams where I held the role of captain for my last two years. </p>
       
-    <h1 name = "what">What have I done?</h1>  
-        <h2>Let me show you what experience I have and the projects I have worked on in the past.</h2>
-    
-    <h1 name = "why">Why should you hire me?</h1> 
+      <h2>A glance into my personal life</h2>
+      <container id = "imageFeed">
+          <img src = "images/edited/chef.png" class = "feed"/>
+          <img src = "images/edited/jet.png" class = "feed"/>
+          <img src = "images/edited/hanbao.png" class = "feed"/>
+          <p>Showing off my burger making skills in my breaking bad apron</p>
+          <p>Learning how to use a flyboard / jet ski whilst on holiday in Gran Canaria </p>
+          <p>Enjoying Worcester's finest Han Bao burgers</p>
+          <img src = "images/edited/pitch.png" class = "feed"/>
+          <img src = "images/edited/mike.png" class = "feed"/>
+          <img src = "images/edited/football.png" class = "feed"/>
+          <p>Competing in a football match between the two local Waitrose stores</p>
+          <p>All smiles whilst working at Flying Tiger during the Christmas holidays</p>
+          <p>Playing five-a-side football whilst at the University of Worcester</p>
+          <img src = "images/edited/eye.png" class = "feed"/>
+          <img src = "images/edited/house.png" class = "feed"/>
+          <img src = "images/edited/sea.png" class = "feed"/>
+          <p>Exploring the beautiful city of London at night</p>
+          <p>Viewing our soon-to-be home as construction took place</p>
+          <p>A stunning view of an exceptionally stunning place - Madeira, Portugal</p>
+      </container>
+  </div> 
+      
+  <div id ="what">
+    <h1><a name = "what">What have I done?</a></h1>  
+        <h2>Let me show you what experience I have and the projects I have worked on in the past.</h2> 
+    <section id = "imageFeed">
+        <container class = "examples">
+            <img src = "images/edited/Primucus.png" class = "visuals">
+            <button class = "portfolioLinks"><a href = "link1.html">View This Project</a></button>
+        </container>
+        <container class = "examples">
+            <img src = "images/edited/TopGolf.jpg" class = "visuals">
+            <button class = "portfolioLinks"><a href = "link1.html">View This Project</a></button>
+        </container>
+        <container class = "examples">
+            <img src = "images/edited/Longacres.jpg" class = "visuals">
+            <button class = "portfolioLinks"><a href = "link1.html">View This Project</a></button>
+        </container>
+        <container class = "examples">
+            <img src = "images/edited/Tropical.jpg" class = "visuals">
+            <button class = "portfolioLinks"><a href = "link1.html">View This Project</a></button>
+        </container>
+        <container class = "examples">
+            <h1 class = "visuals">Chug Challenge</h1>
+            <button class = "portfolioLinks"><a href = "link1.html">View This Project</a></button>
+        </container>
+        <container class = "examples">
+            <img src = "images/edited/logo.png" class = "visuals">
+            <button class = "portfolioLinks"><a href = "link1.html">View This Project</a></button>
+        </container>
+    </section>
+  </div>    
+
+  <div id ="why"> 
+    <h1><a name = "why">Why should you hire me?</a></h1> 
         <h2>Let me convince you that I am the right man for the job.</h2>
+        <button><a href="media/CV%20-%20Charles%20de%20Kerckhove.pdf">Download Resume</a></button>
+      <img width="100%" height="auto" src = "images/CV%20-%20Charles%20de%20Kerckhove.png"/>
+        
+  </div>
+      
 <!--footer with site map navigation-->
     <footer>
       <ul>
