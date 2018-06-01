@@ -79,6 +79,7 @@ nav ul {
 nav li {
   float: right;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
   line-height: 40px;
   height: 40px;
   width: 12%;
@@ -153,6 +154,8 @@ nav a:hover,
     grid-column-gap: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    width: 60%;
+    margin: auto;
 }
 .feed{
     width: 100%;
@@ -171,14 +174,13 @@ nav a:hover,
 .examples{
     position: relative;
     width: 100%;
-    height: inherit;
+    height: auto;
     display: block;
     margin: auto;
     border: 2px solid #0CCFFF;
 }
 .visuals{
-    width: 100%;
-    height: auto;
+    width: inherit;
     margin: auto;
     opacity: 1;
     display: block;
@@ -211,6 +213,84 @@ nav a:hover,
     height: auto;
     background-color: #0CCFFF;
     color: #fff;
+}
+#download{
+    display: block;
+    margin: auto;
+}
+/*Back*/
+#returnul{
+    position: fixed;
+    top: 48px;
+}
+#returna{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10%;
+    border-radius: 0 3px 3px 0;
+}
+#returnli{
+    line-height: 1.3em;
+    font-size: 1.3em;
+    color: #fff;
+}
+#returna:hover{
+    color: #0CCFFF;
+}
+/*Screenshots*/
+#screenshotContainer{
+    margin-top: 2%;
+}
+#screenshot1{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+#caption1{
+    width: 60%;
+    height: auto;
+    text-align: justify;
+    display: block;
+    margin: auto;
+}
+#link{
+    text-decoration: underline;
+    color: #0CCFFF;
+}
+/*Slideshow*/
+#slideshowContainer{
+    margin-top: 2%;    
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    color: #0CCFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 38%;
+}
+.prev {
+    left: 38%;
+}
+.slides{
+    display: block;
+    margin: auto;
+    height: 600px;
+}
+.tables{
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
 }
 /*Footer*/
 

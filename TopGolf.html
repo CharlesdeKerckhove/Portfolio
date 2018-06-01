@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Portfolio</title>
+<!--link to external files-->
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/Slideshow.js" type="text/javascript" defer></script>
+
+<!--responsive layout-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!--mobile nav bar-->
+    <nav id="mobileMain">
+      <ul id="menu">
+<!--dropdown menu-->
+        <li class="dropdown" id="mobileDropDown">
+          <a id="dropbtn">
+            <image id="hamburger" src="images/edited/Hamburger.png"></image>
+          </a>
+<!--webpages-->
+          <div class="dropdown-content">
+            <a href="index.html">Charles de Kerckhove</a>
+            <a href="index.html#who">Who?</a>
+            <a href="index.html#what">What?</a>
+            <a href="index.html#why">Why?</a>     
+<!-- blog            <a href=""></a> -->
+<!-- templates            <a href=""></a> -->
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--desktop nav bar--> 
+    <nav name = "main" id="main">
+          <ul id = "navigation">
+            <li id = "home" class="active"><a href="index.html">Charles de Kerckhove</a></li>
+            <li><a href="index.html#why">Why?</a></li>
+            <li><a href="index.html#what">What?</a></li>
+            <li><a href="index.html#who">Who?</a></li>
+    <!--        <li class="dropdown"><a id="dropbtn"></a>
+              <div class="dropdown-content">
+     blog            <a href=""></a> 
+     templates            <a href=""></a> 
+              </div>
+            </li> -->
+          </ul>
+    </nav>
+      <br>
+        <ul id = "returnul"><li id = "returnli"><a id = "returna" href="index.html#what"><i class="fas fa-arrow-circle-left"></i> Back </a></li></ul>
+      <section id="slideshowContainer">
+      <img class="slides" src="images/TopGolf1.JPG">
+      <img class="slides" src="images/TopGolf2.JPG">
+      <img class="slides" src="images/TopGolf3.JPG">
+      <img class="slides" src="images/TopGolf4.JPG">
+      <img class="slides" src="images/TopGolf5.JPG">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <section id = "caption1">
+        <h1>Top Golf</h1>
+        <p>I was tasked with the job of creating a training application for TopGolf Surrey, they desired a quiz-style mobile app that would have a database of questions relevant to each job role (bar staff, kitchen, runners etc). This project was done by a team of four where I held the role of both designer and developer. An agile approach was taken due to the close connections to the company allowing constant reviews and ideas to be shared continuously.<br><br> The final prototype was then presented by the group to a panel where we had to explain how it worked, why it was an improvement on the current system and reflect on the task and what issues we overcome. To briefly explain how we answered these questions the screenshots show how the databases are structured - they have a bank of questions, answers (correct and incorrect) and employee details.<br><br> 
+        Alongside these screenshots, here is a link to the application: <a id = "link" href="http://www.dekerckhove.worcestercomputing.com/TopGolfApp/register.php">TopGolf Training App</a><br><br>
+        </p>
+    </section> 
+      <section id="slideshowContainer">
+      <img class="tables" src="images/TopGolf6.JPG"><br>
+      <img class="tables" src="images/TopGolf7.JPG"><br>
+      <img class="tables" src="images/TopGolf8.JPG"><br>
+    </section>
+  </body>
+
+</html>
