@@ -1,0 +1,16 @@
+.nav-bottom {
+    display: none;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: $dark;
+    height: $nav-height;
+    width: 100%;
+}
+@media only screen and (max-width: 798px) {
+    // Hamburger nav visible on mobile only
+    .nav-bottom {
+        display: inline-flex;
+    }
+}

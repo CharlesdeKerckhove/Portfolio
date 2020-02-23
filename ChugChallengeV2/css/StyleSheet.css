@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	max-height:100%;
+	max-width: 100%;
+    font-size: 1.2em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    background-color: #fff;
+	text-align: center;
+}
+/*fonts*/
+h1{
+    float: center;
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+h2{
+    float: center;
+    text-align: center;
+    color: #000000;
+    font-size: 2.4em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    margin-top: 5%;
+}
+h3{
+    float: center;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+}
+/*Consistent Items*/
+    /*Buttons*/
+.Button2{
+    text-align: center;
+    background-color: #459ee5;
+    height:auto;
+    width:100%;
+    color: #fff;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: none;
+   	text-decoration: none;
+}
+.Button3Left{
+    background-color: #0ac049;
+    height:auto;
+    width:40%;
+    display: inline-block;
+    margin-top: 5%;
+    margin-right: 5%;
+    color: #fff;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:4%;
+    border: none;
+   	text-decoration: none;
+}
+.Button3Right{
+    background-color: #0ac049;
+    height:auto;
+    width:40%;
+    display: inline-block;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:4%;
+   	border: none;
+   	text-decoration: none;
+}
+    /*Never*/
+.BorderC{
+    height:400px;
+    width: 99%;
+    border: 2px solid transparent;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Question1{
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+    /*Chug*/
+.Border{
+    border: 2px solid transparent;
+    border-radius: 2%;
+	margin: auto;
+	width: 100%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+/*Index*/
+#SelectGame{
+    float: center;
+    text-align: center;
+    color: #000000;
+    font-size: 1.8em;
+    margin: none;
+    margin-bottom: 2%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+}
+#buttons{
+    display: inline-block;
+    width: 100%;
+}
+#NeverBtn{
+    background-color: #0ac049;
+}
+#ChugBtn{
+    background-color: #459ee5;
+}
+#EroBtn{
+    background-color: #7f73ed;
+}
+#ParaBtn{
+    background-color: #ff3377;
+    margin-bottom: 5%;
+}
+#SuggestBtn{
+    background-color: #ff4444;
+}
+#AdminBtn{
+    background-color: #daa520;
+}
+
+/*Never*/
+#NeverQuestion{
+    color: #0ac049;
+}
+#NeverBorder{
+    border-bottom-color: #0ac049;
+    border-top-color: #0ac049;
+}
+#QuitNeverBtn{
+    background-color: #0ac049;
+}
+#NextNeverBtn{
+    background-color: #0ac049;
+}
+#ReplayNever{
+    background-color: #0ac049;
+}
+#QuitNever{
+    background-color: #0ac049;
+}
+
+/*Chug*/
+#ChugQuestion{
+    color: #459ee5;
+}
+#ChugBorder{
+    border-top-color: #459ee5;
+    border-bottom-color: #459ee5;
+}
+#QuitChugBtn{
+    background-color: #459ee5;
+}
+#NextChugBtn{
+    background-color: #459ee5;
+}
+#ReplayChug{
+    background-color: #459ee5;
+}
+#QuitChug{
+    background-color: #459ee5;
+}
+
+/*Erotic*/
+#EroticQuestion{
+    color: #7f73ed;
+}
+#EroticBorder{
+    border-top-color: #7f73ed;
+    border-bottom-color: #7f73ed;
+}
+#QuitEroticBtn{
+    background-color: #7f73ed;
+}
+#NextEroticBtn{
+    background-color: #7f73ed;
+}
+#ReplayErotic{
+    background-color: #7f73ed;
+}
+#QuitErotic{
+    background-color: #7f73ed;
+}
+
+/*Paranoia*/
+#ParanoiaQuestion{
+    color: #ff3377;
+}
+#ParanoiaBorder{
+    border-top-color: #ff3377;
+    border-bottom-color: #ff3377;
+}
+#StartParanoiaBtn{
+    background-color: #ff3377;
+}
+#QuitParanoiaBtn{
+    background-color: #ff3377;
+}
+#NextParanoiaBtn{
+    background-color: #ff3377;
+}
+#ReplayParanoia{
+    background-color: #ff3377;
+}
+#QuitParanoia{
+    background-color: #ff3377;
+}
+
+
+.Button1{
+    background-color: #fef3f8;
+    height:auto;
+    width:40%;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+	position: fixed;
+	bottom: 10;
+	left: 50%;
+	transform:translateX(-50%);
+}
+
+.Button4{
+    background-color: #fff;
+    height:auto;
+    width:50%;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+}
+.Button5{
+    background-color: #fff;
+    height:auto;
+    width:100%;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+}
+.Button6{
+    background-color: #fff;
+    height:auto;
+    width:100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+}
+.ButtonHome{
+    background-color: #fff;
+    height:auto;
+    width:40%;
+    text-align: center;
+    float: center;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+}
+a{
+    background-color: #fff;
+    text-decoration: none;
+    color: #f785b6;
+}
+
+/*Admin*/
+.QuestionInputs{
+    width: 80%;
+    height: 1.3em;
+    font-size: 1.3em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    float: left;
+    padding: 1%;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    border: 2px solid #459ee5;
+}
+.uploadQuestion{
+    width: 10%;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    float: left;
+    padding: 1%;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: #459ee5;
+    color: #fff;
+    border: none;
+}
+#uploadStatus{
+    display: inline-block;
+}
