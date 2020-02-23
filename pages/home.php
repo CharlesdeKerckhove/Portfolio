@@ -51,6 +51,31 @@
 <section id="projects" class="projects">
     <div class="centre">
         <h1>PROJECTS</h1>
+        <h2>WEB DESIGN PROJECTS</h2>
+        <section id="imageFeed">
+          <container class="examples">
+                <img src="images/edited/Shokoladi.jpg" class="visuals">
+                <span style="text-align:center;margin-bottom:5px;">Logo & Website</span>
+                <div class="btnCont">
+                    <button class="portfolioLinks"><a href="https://xd.adobe.com/view/942c897b-efc5-4d99-4681-ff16ab865e3d-e21d/" target="_blank">VIEW</a></button>
+                </div>
+            </container>
+            <container class="examples">
+                <img src="images/edited/IHateMyFriends.png" class="visuals">
+                <span style="text-align:center;margin-bottom:5px;">Logo & Website</span>
+                <div class="btnCont">
+                    <button class="portfolioLinks"><a href="https://xd.adobe.com/view/62f2a3df-fe55-41c4-4984-e104d1fab433-14c3/" target="_blank">VIEW</a></button>
+                </div>
+            </container>  
+          <container class="examples">
+                <img src="images/edited/TennisCourt.png" class="visuals">
+                <span style="text-align:center;margin-bottom:5px;">Drone Photography</span>
+                <div class="btnCont">
+                    <button class="portfolioLinks"><a href="files/TennisCourt.docx" target="_blank">VIEW</a></button>
+                </div>
+            </container>
+        </section>
+        
         <h2>WEB DEVELOPMENT PROJECTS</h2>
         <section id="imageFeed">
           <container class="examples">
